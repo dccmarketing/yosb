@@ -19,7 +19,7 @@ class yosb_Utilities {
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 */
-		load_theme_textdomain( 'tcb-landing', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'yosb', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -87,7 +87,7 @@ class yosb_Utilities {
 		 * Register Menus
 		 */
 		register_nav_menus( array(
-			'calls-to-action' => esc_html__( 'Calls to Action Buttons', 'tcb-landing' )
+			'calls-to-action' => esc_html__( 'Calls to Action Buttons', 'yosb' )
 		) );
 
 	} // setup()
@@ -117,8 +117,8 @@ class yosb_Utilities {
 	 */
 	public function add_mime_types( $post_mime_types ) {
 
-	    $post_mime_types['application/pdf'] = array( esc_html__( 'PDFs', 'tcb-landing' ), esc_html__( 'Manage PDFs', 'tcb-landing' ), _n_noop( 'PDF <span class="count">(%s)</span>', 'PDFs <span class="count">(%s)</span>' ) );
-	    $post_mime_types['text/x-vcard'] 	= array( esc_html__( 'vCards', 'tcb-landing' ), esc_html__( 'Manage vCards', 'tcb-landing' ), _n_noop( 'vCard <span class="count">(%s)</span>', 'vCards <span class="count">(%s)</span>' ) );
+	    $post_mime_types['application/pdf'] = array( esc_html__( 'PDFs', 'yosb' ), esc_html__( 'Manage PDFs', 'yosb' ), _n_noop( 'PDF <span class="count">(%s)</span>', 'PDFs <span class="count">(%s)</span>' ) );
+	    $post_mime_types['text/x-vcard'] 	= array( esc_html__( 'vCards', 'yosb' ), esc_html__( 'Manage vCards', 'yosb' ), _n_noop( 'vCard <span class="count">(%s)</span>', 'vCards <span class="count">(%s)</span>' ) );
 
 	    return $post_mime_types;
 
@@ -256,9 +256,9 @@ class yosb_Utilities {
 		global $post;
 
 		$return = sprintf( '... <a class="moretag read-more" href="%s">', esc_url( get_permalink( $post->ID ) ) );
-		$return .= esc_html__( 'Read more', 'tcb-landing' );
+		$return .= esc_html__( 'Read more', 'yosb' );
 		$return .= '<span class="screen-reader-text">';
-		$return .= sprintf( esc_html__( ' about %s', 'tcb-landing' ), $post->post_title );
+		$return .= sprintf( esc_html__( ' about %s', 'yosb' ), $post->post_title );
 		$return .= '</span></a>';
 
 		return $return;
@@ -274,8 +274,8 @@ class yosb_Utilities {
 
 		$return 	= '';
 		$families 	= '';
-		$fonts[] 	= array( 'font' => 'Open Sans Condensed', 'weights' => '400,700', 'translate' => esc_html_x( 'on', 'Open Sans Condensed font: on or off', 'tcb-landing' ) );
-		$fonts[] 	= array( 'font' => 'Roboto Condensed', 'weights' => '400,700', 'translate' => esc_html_x( 'on', 'Roboto Condensed font: on or off', 'tcb-landing' ) );
+		$fonts[] 	= array( 'font' => 'Open Sans Condensed', 'weights' => '400,700', 'translate' => esc_html_x( 'on', 'Open Sans Condensed font: on or off', 'yosb' ) );
+		$fonts[] 	= array( 'font' => 'Roboto Condensed', 'weights' => '400,700', 'translate' => esc_html_x( 'on', 'Roboto Condensed font: on or off', 'yosb' ) );
 
 		foreach ( $fonts as $font ) {
 
@@ -393,7 +393,7 @@ class yosb_Utilities {
 
 		} else {
 
-			echo '<span class="name-template">' . esc_html( 'Default', 'tcb-landing' ) . '</span>';
+			echo '<span class="name-template">' . esc_html( 'Default', 'yosb' ) . '</span>';
 
 		}
 
@@ -408,7 +408,7 @@ class yosb_Utilities {
 	 */
 	public function page_template_column_head( $defaults ) {
 
-		$defaults['page_template'] = esc_html( 'Page Template', 'tcb-landing' );
+		$defaults['page_template'] = esc_html( 'Page Template', 'yosb' );
 
 	    return $defaults;
 
@@ -514,7 +514,7 @@ class yosb_Utilities {
 	public function widgets_init() {
 
 		register_sidebar( array(
-			'name'          => esc_html__( 'Sidebar', 'tcb-landing' ),
+			'name'          => esc_html__( 'Sidebar', 'yosb' ),
 			'id'            => 'sidebar-1',
 			'description'   => esc_html__( 'Add widgets here.', '_s' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',

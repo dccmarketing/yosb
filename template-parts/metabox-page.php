@@ -15,9 +15,9 @@ $atts 					= array();
 $atts['class'] 			= 'widefat';
 $atts['description'] 	= '';
 $atts['id'] 			= 'headline';
-$atts['label'] 			= __( 'Headline', 'tcb-landing' );
+$atts['label'] 			= __( 'Headline', 'yosb' );
 $atts['name'] 			= 'headline';
-$atts['placeholder'] 	= __( 'Enter the headline', 'tcb-landing' );
+$atts['placeholder'] 	= __( 'Enter the headline', 'yosb' );
 $atts['type'] 			= 'text';
 $atts['value'] 			= '';
 
@@ -41,9 +41,9 @@ include( get_template_directory() . '/fields/field-text.php' );
 $atts['class'] 			= 'widefat';
 $atts['description'] 	= '';
 $atts['id'] 			= 'subheading';
-$atts['label'] 			= __( 'Subheading', 'tcb-landing' );
+$atts['label'] 			= __( 'Subheading', 'yosb' );
 $atts['name'] 			= 'subheading';
-$atts['placeholder'] 	= __( 'Enter the subheading', 'tcb-landing' );
+$atts['placeholder'] 	= __( 'Enter the subheading', 'yosb' );
 $atts['type'] 			= 'text';
 $atts['value'] 			= '';
 
@@ -65,8 +65,8 @@ include( get_template_directory() . '/fields/field-text.php' );
 
 
 $atts 					= array();
-$atts['aria'] 			= esc_html__( 'Select main menu', 'tcb-landing' );
-$atts['blank'] 			= esc_html__( 'Select main menu', 'tcb-landing' );
+$atts['aria'] 			= esc_html__( 'Select main menu', 'yosb' );
+$atts['blank'] 			= esc_html__( 'Select main menu', 'yosb' );
 $atts['class'] 			= 'widefat';
 $atts['description'] 	= 'Select the main menu to display on this page.';
 $atts['id'] 			= 'main-menu';
@@ -100,8 +100,8 @@ include( get_template_directory() . '/fields/field-select.php' );
 
 
 $atts 					= array();
-$atts['aria'] 			= esc_html__( 'Select side menu', 'tcb-landing' );
-$atts['blank'] 			= esc_html__( 'Select side menu', 'tcb-landing' );
+$atts['aria'] 			= esc_html__( 'Select side menu', 'yosb' );
+$atts['blank'] 			= esc_html__( 'Select side menu', 'yosb' );
 $atts['class'] 			= 'widefat';
 $atts['description'] 	= 'Select the side menu to display on this page.';
 $atts['id'] 			= 'side-menu';

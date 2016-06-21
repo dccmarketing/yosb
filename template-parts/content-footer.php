@@ -7,9 +7,9 @@
  * @package TCB_Landing
  */
 
-?><p><?php printf( esc_html__( 'Town and Country is committed to fair and responsible mortgage lending practices. Our entire team is licensed through the National Mortgage Licensing System. Their NMLS numbers are accessible in the %1$s.', 'tcb-landing' ), '<a href="http://www.townandcountrybank.com/home-ownership/your-team" target="_blank">Your Team page of our website.</a>' ); ?></p>
+?><p><?php printf( esc_html__( 'Town and Country is committed to fair and responsible mortgage lending practices. Our entire team is licensed through the National Mortgage Licensing System. Their NMLS numbers are accessible in the %1$s.', 'yosb' ), '<a href="http://www.townandcountrybank.com/home-ownership/your-team" target="_blank">Your Team page of our website.</a>' ); ?></p>
 
-<p><?php echo esc_html( 'The following links are to another website operated by a third party.  The linked sites have their own security and privacy policies and may provide less security than the Bank\'s website.  The Bank does not endorse or guarantee the products, information or recommendations provided by the linked site.  The Bank is not liable for any failure of products or services advertised on the linked site.', 'tcb-landing' ); ?></p>
+<p><?php echo esc_html( 'The following links are to another website operated by a third party.  The linked sites have their own security and privacy policies and may provide less security than the Bank\'s website.  The Bank does not endorse or guarantee the products, information or recommendations provided by the linked site.  The Bank is not liable for any failure of products or services advertised on the linked site.', 'yosb' ); ?></p>
 
 <p>
 	<a href="http://www.hud.gov/">

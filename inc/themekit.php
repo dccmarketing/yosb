@@ -282,7 +282,7 @@ class yosb_Themekit {
 		$return .= '<span itemprop="telephone">';
 		$return .= '<a href="tel:' . $formatted . '">';
 		$return .= '<span class="screen-reader-text">';
-		$return .= esc_html__( 'Call ', 'tcb-landing' ) . '</span>';
+		$return .= esc_html__( 'Call ', 'yosb' ) . '</span>';
 		$return .= $number . '</a>';
 		$return .= '</span>';
 

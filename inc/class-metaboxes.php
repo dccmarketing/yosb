@@ -64,7 +64,7 @@ class yosb_Admin_Metaboxes {
 
 		add_meta_box(
 			'yosb_page',
-			apply_filters( $this->theme_name . '-metabox-name-title', esc_html__( 'Landing Page', 'tcb-landing' ) ),
+			apply_filters( $this->theme_name . '-metabox-name-title', esc_html__( 'Landing Page', 'yosb' ) ),
 			array( $this, 'metabox' ),
 			'page',
 			'normal',
@@ -86,10 +86,10 @@ class yosb_Admin_Metaboxes {
 	 */
 	public function change_featured_image_labels( $labels ) {
 
-		$labels->featured_image 		= esc_html__( 'Featured Image', 'tcb-landing' );
-		$labels->set_featured_image 	= esc_html__( 'Set featured image', 'tcb-landing' );
-		$labels->remove_featured_image 	= esc_html__( 'Remove featured image', 'tcb-landing' );
-		$labels->use_featured_image 	= esc_html__( 'Use as featured image', 'tcb-landing' );
+		$labels->featured_image 		= esc_html__( 'Featured Image', 'yosb' );
+		$labels->set_featured_image 	= esc_html__( 'Set featured image', 'yosb' );
+		$labels->remove_featured_image 	= esc_html__( 'Remove featured image', 'yosb' );
+		$labels->use_featured_image 	= esc_html__( 'Use as featured image', 'yosb' );
 
 		return $labels;
 

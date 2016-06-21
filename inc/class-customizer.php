@@ -25,10 +25,10 @@ class yosb_Customizer {
 		$wp_customize->add_panel( 'theme_options',
 			array(
 				'capability'  		=> 'edit_theme_options',
-				'description'  		=> esc_html__( 'Options for TCB Landing Pages', 'tcb-landing' ),
+				'description'  		=> esc_html__( 'Options for TCB Landing Pages', 'yosb' ),
 				'priority'  		=> 10,
 				'theme_supports'  	=> '',
-				'title'  			=> esc_html__( 'Theme Options', 'tcb-landing' ),
+				'title'  			=> esc_html__( 'Theme Options', 'yosb' ),
 			)
 		);
 
@@ -37,10 +37,10 @@ class yosb_Customizer {
 		$wp_customize->add_panel( 'theme_options',
 			array(
 				'capability'  		=> 'edit_theme_options',
-				'description'  		=> esc_html__( 'Options for TCB Landing Pages', 'tcb-landing' ),
+				'description'  		=> esc_html__( 'Options for TCB Landing Pages', 'yosb' ),
 				'priority'  		=> 10,
 				'theme_supports'  	=> '',
-				'title'  			=> esc_html__( 'Theme Options', 'tcb-landing' ),
+				'title'  			=> esc_html__( 'Theme Options', 'yosb' ),
 			)
 		);
 		*/
@@ -76,10 +76,10 @@ class yosb_Customizer {
 		$wp_customize->add_section( 'new_section',
 			array(
 				'capability' 	=> 'edit_theme_options',
-				'description' 	=> esc_html__( 'New Customizer Section', 'tcb-landing' ),
+				'description' 	=> esc_html__( 'New Customizer Section', 'yosb' ),
 				'panel' 		=> 'theme_options',
 				'priority' 		=> 10,
-				'title' 		=> esc_html__( 'New Section', 'tcb-landing' )
+				'title' 		=> esc_html__( 'New Section', 'yosb' )
 			)
 		);
 		*/
@@ -124,8 +124,8 @@ class yosb_Customizer {
 		$wp_customize->add_control(
 			'tag_manager',
 			array(
-				'description' 		=> esc_html__( 'Paste in the Google Tag Manager code here. Do not include the comment tags!', 'tcb-landing' ),
-				'label' 			=> esc_html__( 'Google Tag Manager', 'tcb-landing' ),
+				'description' 		=> esc_html__( 'Paste in the Google Tag Manager code here. Do not include the comment tags!', 'yosb' ),
+				'label' 			=> esc_html__( 'Google Tag Manager', 'yosb' ),
 				'priority' 			=> 90,
 				'section' 			=> 'title_tagline',
 				'settings' 			=> 'tag_manager',
@@ -152,8 +152,8 @@ class yosb_Customizer {
 		$wp_customize->add_control(
 			'text_field',
 			array(
-				'description' 		=> esc_html__( '', 'tcb-landing' ),
-				'label'  			=> esc_html__( 'Text Field', 'tcb-landing' ),
+				'description' 		=> esc_html__( '', 'yosb' ),
+				'label'  			=> esc_html__( 'Text Field', 'yosb' ),
 				'priority' 			=> 10,
 				'section'  			=> 'new_section',
 				'settings' 			=> 'text_field',
@@ -176,8 +176,8 @@ class yosb_Customizer {
 		$wp_customize->add_control(
 			'url_field',
 			array(
-				'description' 		=> esc_html__( '', 'tcb-landing' ),
-				'label' 			=> esc_html__( 'URL Field', 'tcb-landing' ),
+				'description' 		=> esc_html__( '', 'yosb' ),
+				'label' 			=> esc_html__( 'URL Field', 'yosb' ),
 				'priority' 			=> 10,
 				'section' 			=> 'new_section',
 				'settings' 			=> 'url_field',
@@ -200,8 +200,8 @@ class yosb_Customizer {
 		$wp_customize->add_control(
 			'email_field',
 			array(
-				'description' 		=> esc_html__( '', 'tcb-landing' ),
-				'label' 			=> esc_html__( 'Email Field', 'tcb-landing' ),
+				'description' 		=> esc_html__( '', 'yosb' ),
+				'label' 			=> esc_html__( 'Email Field', 'yosb' ),
 				'priority' 			=> 10,
 				'section' 			=> 'new_section',
 				'settings' 			=> 'email_field',
@@ -222,8 +222,8 @@ class yosb_Customizer {
 		$wp_customize->add_control(
 			'date_field',
 			array(
-				'description' 		=> esc_html__( '', 'tcb-landing' ),
-				'label' 			=> esc_html__( 'Date Field', 'tcb-landing' ),
+				'description' 		=> esc_html__( '', 'yosb' ),
+				'label' 			=> esc_html__( 'Date Field', 'yosb' ),
 				'priority' 			=> 10,
 				'section' 			=> 'new_section',
 				'settings' 			=> 'date_field',
@@ -244,8 +244,8 @@ class yosb_Customizer {
 		$wp_customize->add_control(
 			'checkbox_field',
 			array(
-				'description' 		=> esc_html__( '', 'tcb-landing' ),
-				'label' 			=> esc_html__( 'Checkbox Field', 'tcb-landing' ),
+				'description' 		=> esc_html__( '', 'yosb' ),
+				'label' 			=> esc_html__( 'Checkbox Field', 'yosb' ),
 				'priority' 			=> 10,
 				'section' 			=> 'new_section',
 				'settings' 			=> 'checkbox_field',
@@ -268,8 +268,8 @@ class yosb_Customizer {
 		$wp_customize->add_control(
 			'password_field',
 			array(
-				'description' 		=> esc_html__( '', 'tcb-landing' ),
-				'label' 			=> esc_html__( 'Password Field', 'tcb-landing' ),
+				'description' 		=> esc_html__( '', 'yosb' ),
+				'label' 			=> esc_html__( 'Password Field', 'yosb' ),
 				'priority' 			=> 10,
 				'section' 			=> 'new_section',
 				'settings' 			=> 'password_field',
@@ -292,12 +292,12 @@ class yosb_Customizer {
 			'radio_field',
 			array(
 				'choices' 			=> array(
-					'choice1' 		=> esc_html__( 'Choice 1', 'tcb-landing' ),
-					'choice2' 		=> esc_html__( 'Choice 2', 'tcb-landing' ),
-					'choice3' 		=> esc_html__( 'Choice 3', 'tcb-landing' )
+					'choice1' 		=> esc_html__( 'Choice 1', 'yosb' ),
+					'choice2' 		=> esc_html__( 'Choice 2', 'yosb' ),
+					'choice3' 		=> esc_html__( 'Choice 3', 'yosb' )
 				),
-				'description' 		=> esc_html__( '', 'tcb-landing' ),
-				'label' 			=> esc_html__( 'Radio Field', 'tcb-landing' ),
+				'description' 		=> esc_html__( '', 'yosb' ),
+				'label' 			=> esc_html__( 'Radio Field', 'yosb' ),
 				'priority' 			=> 10,
 				'section' 			=> 'new_section',
 				'settings' 			=> 'radio_field',
@@ -320,12 +320,12 @@ class yosb_Customizer {
 			'select_field',
 			array(
 				'choices' 			=> array(
-					'choice1' 		=> esc_html__( 'Choice 1', 'tcb-landing' ),
-					'choice2' 		=> esc_html__( 'Choice 2', 'tcb-landing' ),
-					'choice3' 		=> esc_html__( 'Choice 3', 'tcb-landing' )
+					'choice1' 		=> esc_html__( 'Choice 1', 'yosb' ),
+					'choice2' 		=> esc_html__( 'Choice 2', 'yosb' ),
+					'choice3' 		=> esc_html__( 'Choice 3', 'yosb' )
 				),
-				'description' 		=> esc_html__( '', 'tcb-landing' ),
-				'label' 			=> esc_html__( 'Select Field', 'tcb-landing' ),
+				'description' 		=> esc_html__( '', 'yosb' ),
+				'label' 			=> esc_html__( 'Select Field', 'yosb' ),
 				'priority' 			=> 10,
 				'section' 			=> 'new_section',
 				'settings' 			=> 'select_field',
@@ -347,8 +347,8 @@ class yosb_Customizer {
 		$wp_customize->add_control(
 			'textarea_field',
 			array(
-				'description' 		=> esc_html__( '', 'tcb-landing' ),
-				'label' 			=> esc_html__( 'Textarea Field', 'tcb-landing' ),
+				'description' 		=> esc_html__( '', 'yosb' ),
+				'label' 			=> esc_html__( 'Textarea Field', 'yosb' ),
 				'priority' 			=> 10,
 				'section' 			=> 'new_section',
 				'settings' 			=> 'textarea_field',
@@ -371,7 +371,7 @@ class yosb_Customizer {
 		$wp_customize->add_control(
 			'range_field',
 			array(
-				'description' 		=> esc_html__( '', 'tcb-landing' ),
+				'description' 		=> esc_html__( '', 'yosb' ),
 				'input_attrs' 		=> array(
 					'class' 		=> 'range-field',
 					'max' 			=> 100,
@@ -379,7 +379,7 @@ class yosb_Customizer {
 					'step' 			=> 1,
 					'style' 		=> 'color: #020202'
 				),
-				'label' 			=> esc_html__( 'Range Field', 'tcb-landing' ),
+				'label' 			=> esc_html__( 'Range Field', 'yosb' ),
 				'priority' 			=> 10,
 				'section' 			=> 'new_section',
 				'settings' 			=> 'range_field',
@@ -401,8 +401,8 @@ class yosb_Customizer {
 		$wp_customize->add_control(
 			'select_page_field',
 			array(
-				'description' 		=> esc_html__( '', 'tcb-landing' ),
-				'label' 			=> esc_html__( 'Select Page', 'tcb-landing' ),
+				'description' 		=> esc_html__( '', 'yosb' ),
+				'label' 			=> esc_html__( 'Select Page', 'yosb' ),
 				'priority' 			=> 10,
 				'section' 			=> 'new_section',
 				'settings' 			=> 'select_page_field',
@@ -426,8 +426,8 @@ class yosb_Customizer {
 				$wp_customize,
 				'color_field',
 				array(
-					'description' 	=> esc_html__( '', 'tcb-landing' ),
-					'label' 		=> esc_html__( 'Color Field', 'tcb-landing' ),
+					'description' 	=> esc_html__( '', 'yosb' ),
+					'label' 		=> esc_html__( 'Color Field', 'yosb' ),
 					'priority' 		=> 10,
 					'section' 		=> 'new_section',
 					'settings' 		=> 'color_field'
@@ -445,8 +445,8 @@ class yosb_Customizer {
 				$wp_customize,
 				'file_upload',
 				array(
-					'description' 	=> esc_html__( '', 'tcb-landing' ),
-					'label' 		=> esc_html__( 'File Upload', 'tcb-landing' ),
+					'description' 	=> esc_html__( '', 'yosb' ),
+					'label' 		=> esc_html__( 'File Upload', 'yosb' ),
 					'priority' 		=> 10,
 					'section' 		=> 'new_section',
 					'settings' 		=> 'file_upload'
@@ -469,8 +469,8 @@ class yosb_Customizer {
 				$wp_customize,
 				'image_upload',
 				array(
-					'description' 	=> esc_html__( '', 'tcb-landing' ),
-					'label' 		=> esc_html__( 'Image Field', 'tcb-landing' ),
+					'description' 	=> esc_html__( '', 'yosb' ),
+					'label' 		=> esc_html__( 'Image Field', 'yosb' ),
 					'priority' 		=> 10,
 					'section' 		=> 'new_section',
 					'settings' 		=> 'image_upload'
@@ -496,8 +496,8 @@ class yosb_Customizer {
 				$wp_customize,
 				'media_upload',
 				array(
-					'description' 	=> esc_html__( '', 'tcb-landing' ),
-					'label' 		=> esc_html__( 'Media Field', 'tcb-landing' ),
+					'description' 	=> esc_html__( '', 'yosb' ),
+					'label' 		=> esc_html__( 'Media Field', 'yosb' ),
 					'mime_type' 	=> '',
 					'priority' 		=> 10,
 					'section'		=> 'new_section',
@@ -523,7 +523,7 @@ class yosb_Customizer {
 				$wp_customize,
 				'cropped_image',
 				array(
-					'description' 	=> esc_html__( '', 'tcb-landing' ),
+					'description' 	=> esc_html__( '', 'yosb' ),
 					'flex_height' 	=> '',
 					'flex_width' 	=> '',
 					'height' 		=> '1080',
@@ -549,8 +549,8 @@ class yosb_Customizer {
 			'country',
 			array(
 				'choices' 			=> yosb_country_list(),
-				'description' 		=> esc_html__( '', 'tcb-landing' ),
-				'label' 			=> esc_html__( 'Country', 'tcb-landing' ),
+				'description' 		=> esc_html__( '', 'yosb' ),
+				'label' 			=> esc_html__( 'Country', 'yosb' ),
 				'priority' 			=> 250,
 				'section' 			=> 'contact_info',
 				'settings' 			=> 'country',
@@ -572,71 +572,71 @@ class yosb_Customizer {
 			'us_state',
 			array(
 				'choices' => array(
-					'AL' => esc_html__( 'Alabama', 'tcb-landing' ),
-					'AK' => esc_html__( 'Alaska', 'tcb-landing' ),
-					'AZ' => esc_html__( 'Arizona', 'tcb-landing' ),
-					'AR' => esc_html__( 'Arkansas', 'tcb-landing' ),
-					'CA' => esc_html__( 'California', 'tcb-landing' ),
-					'CO' => esc_html__( 'Colorado', 'tcb-landing' ),
-					'CT' => esc_html__( 'Connecticut', 'tcb-landing' ),
-					'DE' => esc_html__( 'Delaware', 'tcb-landing' ),
-					'DC' => esc_html__( 'District of Columbia', 'tcb-landing' ),
-					'FL' => esc_html__( 'Florida', 'tcb-landing' ),
-					'GA' => esc_html__( 'Georgia', 'tcb-landing' ),
-					'HI' => esc_html__( 'Hawaii', 'tcb-landing' ),
-					'ID' => esc_html__( 'Idaho', 'tcb-landing' ),
-					'IL' => esc_html__( 'Illinois', 'tcb-landing' ),
-					'IN' => esc_html__( 'Indiana', 'tcb-landing' ),
-					'IA' => esc_html__( 'Iowa', 'tcb-landing' ),
-					'KS' => esc_html__( 'Kansas', 'tcb-landing' ),
-					'KY' => esc_html__( 'Kentucky', 'tcb-landing' ),
-					'LA' => esc_html__( 'Louisiana', 'tcb-landing' ),
-					'ME' => esc_html__( 'Maine', 'tcb-landing' ),
-					'MD' => esc_html__( 'Maryland', 'tcb-landing' ),
-					'MA' => esc_html__( 'Massachusetts', 'tcb-landing' ),
-					'MI' => esc_html__( 'Michigan', 'tcb-landing' ),
-					'MN' => esc_html__( 'Minnesota', 'tcb-landing' ),
-					'MS' => esc_html__( 'Mississippi', 'tcb-landing' ),
-					'MO' => esc_html__( 'Missouri', 'tcb-landing' ),
-					'MT' => esc_html__( 'Montana', 'tcb-landing' ),
-					'NE' => esc_html__( 'Nebraska', 'tcb-landing' ),
-					'NV' => esc_html__( 'Nevada', 'tcb-landing' ),
-					'NH' => esc_html__( 'New Hampshire', 'tcb-landing' ),
-					'NJ' => esc_html__( 'New Jersey', 'tcb-landing' ),
-					'NM' => esc_html__( 'New Mexico', 'tcb-landing' ),
-					'NY' => esc_html__( 'New York', 'tcb-landing' ),
-					'NC' => esc_html__( 'North Carolina', 'tcb-landing' ),
-					'ND' => esc_html__( 'North Dakota', 'tcb-landing' ),
-					'OH' => esc_html__( 'Ohio', 'tcb-landing' ),
-					'OK' => esc_html__( 'Oklahoma', 'tcb-landing' ),
-					'OR' => esc_html__( 'Oregon', 'tcb-landing' ),
-					'PA' => esc_html__( 'Pennsylvania', 'tcb-landing' ),
-					'RI' => esc_html__( 'Rhode Island', 'tcb-landing' ),
-					'SC' => esc_html__( 'South Carolina', 'tcb-landing' ),
-					'SD' => esc_html__( 'South Dakota', 'tcb-landing' ),
-					'TN' => esc_html__( 'Tennessee', 'tcb-landing' ),
-					'TX' => esc_html__( 'Texas', 'tcb-landing' ),
-					'UT' => esc_html__( 'Utah', 'tcb-landing' ),
-					'VT' => esc_html__( 'Vermont', 'tcb-landing' ),
-					'VA' => esc_html__( 'Virginia', 'tcb-landing' ),
-					'WA' => esc_html__( 'Washington', 'tcb-landing' ),
-					'WV' => esc_html__( 'West Virginia', 'tcb-landing' ),
-					'WI' => esc_html__( 'Wisconsin', 'tcb-landing' ),
-					'WY' => esc_html__( 'Wyoming', 'tcb-landing' ),
-					'AS' => esc_html__( 'American Samoa', 'tcb-landing' ),
-					'AA' => esc_html__( 'Armed Forces America (except Canada)', 'tcb-landing' ),
-					'AE' => esc_html__( 'Armed Forces Africa/Canada/Europe/Middle East', 'tcb-landing' ),
-					'AP' => esc_html__( 'Armed Forces Pacific', 'tcb-landing' ),
-					'FM' => esc_html__( 'Federated States of Micronesia', 'tcb-landing' ),
-					'GU' => esc_html__( 'Guam', 'tcb-landing' ),
-					'MH' => esc_html__( 'Marshall Islands', 'tcb-landing' ),
-					'MP' => esc_html__( 'Northern Mariana Islands', 'tcb-landing' ),
-					'PR' => esc_html__( 'Puerto Rico', 'tcb-landing' ),
-					'PW' => esc_html__( 'Palau', 'tcb-landing' ),
-					'VI' => esc_html__( 'Virgin Islands', 'tcb-landing' )
+					'AL' => esc_html__( 'Alabama', 'yosb' ),
+					'AK' => esc_html__( 'Alaska', 'yosb' ),
+					'AZ' => esc_html__( 'Arizona', 'yosb' ),
+					'AR' => esc_html__( 'Arkansas', 'yosb' ),
+					'CA' => esc_html__( 'California', 'yosb' ),
+					'CO' => esc_html__( 'Colorado', 'yosb' ),
+					'CT' => esc_html__( 'Connecticut', 'yosb' ),
+					'DE' => esc_html__( 'Delaware', 'yosb' ),
+					'DC' => esc_html__( 'District of Columbia', 'yosb' ),
+					'FL' => esc_html__( 'Florida', 'yosb' ),
+					'GA' => esc_html__( 'Georgia', 'yosb' ),
+					'HI' => esc_html__( 'Hawaii', 'yosb' ),
+					'ID' => esc_html__( 'Idaho', 'yosb' ),
+					'IL' => esc_html__( 'Illinois', 'yosb' ),
+					'IN' => esc_html__( 'Indiana', 'yosb' ),
+					'IA' => esc_html__( 'Iowa', 'yosb' ),
+					'KS' => esc_html__( 'Kansas', 'yosb' ),
+					'KY' => esc_html__( 'Kentucky', 'yosb' ),
+					'LA' => esc_html__( 'Louisiana', 'yosb' ),
+					'ME' => esc_html__( 'Maine', 'yosb' ),
+					'MD' => esc_html__( 'Maryland', 'yosb' ),
+					'MA' => esc_html__( 'Massachusetts', 'yosb' ),
+					'MI' => esc_html__( 'Michigan', 'yosb' ),
+					'MN' => esc_html__( 'Minnesota', 'yosb' ),
+					'MS' => esc_html__( 'Mississippi', 'yosb' ),
+					'MO' => esc_html__( 'Missouri', 'yosb' ),
+					'MT' => esc_html__( 'Montana', 'yosb' ),
+					'NE' => esc_html__( 'Nebraska', 'yosb' ),
+					'NV' => esc_html__( 'Nevada', 'yosb' ),
+					'NH' => esc_html__( 'New Hampshire', 'yosb' ),
+					'NJ' => esc_html__( 'New Jersey', 'yosb' ),
+					'NM' => esc_html__( 'New Mexico', 'yosb' ),
+					'NY' => esc_html__( 'New York', 'yosb' ),
+					'NC' => esc_html__( 'North Carolina', 'yosb' ),
+					'ND' => esc_html__( 'North Dakota', 'yosb' ),
+					'OH' => esc_html__( 'Ohio', 'yosb' ),
+					'OK' => esc_html__( 'Oklahoma', 'yosb' ),
+					'OR' => esc_html__( 'Oregon', 'yosb' ),
+					'PA' => esc_html__( 'Pennsylvania', 'yosb' ),
+					'RI' => esc_html__( 'Rhode Island', 'yosb' ),
+					'SC' => esc_html__( 'South Carolina', 'yosb' ),
+					'SD' => esc_html__( 'South Dakota', 'yosb' ),
+					'TN' => esc_html__( 'Tennessee', 'yosb' ),
+					'TX' => esc_html__( 'Texas', 'yosb' ),
+					'UT' => esc_html__( 'Utah', 'yosb' ),
+					'VT' => esc_html__( 'Vermont', 'yosb' ),
+					'VA' => esc_html__( 'Virginia', 'yosb' ),
+					'WA' => esc_html__( 'Washington', 'yosb' ),
+					'WV' => esc_html__( 'West Virginia', 'yosb' ),
+					'WI' => esc_html__( 'Wisconsin', 'yosb' ),
+					'WY' => esc_html__( 'Wyoming', 'yosb' ),
+					'AS' => esc_html__( 'American Samoa', 'yosb' ),
+					'AA' => esc_html__( 'Armed Forces America (except Canada)', 'yosb' ),
+					'AE' => esc_html__( 'Armed Forces Africa/Canada/Europe/Middle East', 'yosb' ),
+					'AP' => esc_html__( 'Armed Forces Pacific', 'yosb' ),
+					'FM' => esc_html__( 'Federated States of Micronesia', 'yosb' ),
+					'GU' => esc_html__( 'Guam', 'yosb' ),
+					'MH' => esc_html__( 'Marshall Islands', 'yosb' ),
+					'MP' => esc_html__( 'Northern Mariana Islands', 'yosb' ),
+					'PR' => esc_html__( 'Puerto Rico', 'yosb' ),
+					'PW' => esc_html__( 'Palau', 'yosb' ),
+					'VI' => esc_html__( 'Virgin Islands', 'yosb' )
 				),
-				'description' 		=> esc_html__( '', 'tcb-landing' ),
-				'label' 			=> esc_html__( 'State', 'tcb-landing' ),
+				'description' 		=> esc_html__( '', 'yosb' ),
+				'label' 			=> esc_html__( 'State', 'yosb' ),
 				'priority' 			=> 230,
 				'section' 			=> 'contact_info',
 				'settings' 			=> 'us_state',
@@ -658,22 +658,22 @@ class yosb_Customizer {
 			'canada_state',
 			array(
 				'choices' => array(
-					'AB' => esc_html__( 'Alberta', 'tcb-landing' ),
-					'BC' => esc_html__( 'British Columbia', 'tcb-landing' ),
-					'MB' => esc_html__( 'Manitoba', 'tcb-landing' ),
-					'NB' => esc_html__( 'New Brunswick', 'tcb-landing' ),
-					'NL' => esc_html__( 'Newfoundland and Labrador', 'tcb-landing' ),
-					'NT' => esc_html__( 'Northwest Territories', 'tcb-landing' ),
-					'NS' => esc_html__( 'Nova Scotia', 'tcb-landing' ),
-					'NU' => esc_html__( 'Nunavut', 'tcb-landing' ),
-					'ON' => esc_html__( 'Ontario', 'tcb-landing' ),
-					'PE' => esc_html__( 'Prince Edward Island', 'tcb-landing' ),
-					'QC' => esc_html__( 'Quebec', 'tcb-landing' ),
-					'SK' => esc_html__( 'Saskatchewan', 'tcb-landing' ),
-					'YT' => esc_html__( 'Yukon', 'tcb-landing' )
+					'AB' => esc_html__( 'Alberta', 'yosb' ),
+					'BC' => esc_html__( 'British Columbia', 'yosb' ),
+					'MB' => esc_html__( 'Manitoba', 'yosb' ),
+					'NB' => esc_html__( 'New Brunswick', 'yosb' ),
+					'NL' => esc_html__( 'Newfoundland and Labrador', 'yosb' ),
+					'NT' => esc_html__( 'Northwest Territories', 'yosb' ),
+					'NS' => esc_html__( 'Nova Scotia', 'yosb' ),
+					'NU' => esc_html__( 'Nunavut', 'yosb' ),
+					'ON' => esc_html__( 'Ontario', 'yosb' ),
+					'PE' => esc_html__( 'Prince Edward Island', 'yosb' ),
+					'QC' => esc_html__( 'Quebec', 'yosb' ),
+					'SK' => esc_html__( 'Saskatchewan', 'yosb' ),
+					'YT' => esc_html__( 'Yukon', 'yosb' )
 				),
-				'description' 		=> esc_html__( '', 'tcb-landing' ),
-				'label' 			=> esc_html__( 'State', 'tcb-landing' ),
+				'description' 		=> esc_html__( '', 'yosb' ),
+				'label' 			=> esc_html__( 'State', 'yosb' ),
 				'priority' 			=> 230,
 				'section' 			=> 'contact_info',
 				'settings' 			=> 'canada_state',
@@ -695,17 +695,17 @@ class yosb_Customizer {
 			'australia_state',
 			array(
 				'choices' => array(
-					'ACT' 	=> esc_html__( 'Australian Capital Territory', 'tcb-landing' ),
-					'NSW' 	=> esc_html__( 'New South Wales', 'tcb-landing' ),
-					'NT' 	=> esc_html__( 'Northern Territory', 'tcb-landing' ),
-					'QLD' 	=> esc_html__( 'Queensland', 'tcb-landing' ),
-					'SA' 	=> esc_html__( 'South Australia', 'tcb-landing' ),
-					'TAS' 	=> esc_html__( 'Tasmania', 'tcb-landing' ),
-					'VIC' 	=> esc_html__( 'Victoria', 'tcb-landing' ),
-					'WA' 	=> esc_html__( 'Western Australia', 'tcb-landing' )
+					'ACT' 	=> esc_html__( 'Australian Capital Territory', 'yosb' ),
+					'NSW' 	=> esc_html__( 'New South Wales', 'yosb' ),
+					'NT' 	=> esc_html__( 'Northern Territory', 'yosb' ),
+					'QLD' 	=> esc_html__( 'Queensland', 'yosb' ),
+					'SA' 	=> esc_html__( 'South Australia', 'yosb' ),
+					'TAS' 	=> esc_html__( 'Tasmania', 'yosb' ),
+					'VIC' 	=> esc_html__( 'Victoria', 'yosb' ),
+					'WA' 	=> esc_html__( 'Western Australia', 'yosb' )
 				),
-				'description' 		=> esc_html__( '', 'tcb-landing' ),
-				'label' 			=> esc_html__( 'State', 'tcb-landing' ),
+				'description' 		=> esc_html__( '', 'yosb' ),
+				'label' 			=> esc_html__( 'State', 'yosb' ),
 				'priority' 			=> 230,
 				'section' 			=> 'contact_info',
 				'settings' 			=> 'australia_state',
@@ -878,262 +878,262 @@ class yosb_Customizer {
 
 		$countries = array();
 
-		$countries['AF'] = esc_html__( 'Afghanistan (‫افغانستان‬‎)', 'tcb-landing' );
-		$countries['AX'] = esc_html__( 'Åland Islands (Åland)', 'tcb-landing' );
-		$countries['AL'] = esc_html__( 'Albania (Shqipëri)', 'tcb-landing' );
-		$countries['DZ'] = esc_html__( 'Algeria (‫الجزائر‬‎)', 'tcb-landing' );
-		$countries['AS'] = esc_html__( 'American Samoa', 'tcb-landing' );
-		$countries['AD'] = esc_html__( 'Andorra', 'tcb-landing' );
-		$countries['AO'] = esc_html__( 'Angola', 'tcb-landing' );
-		$countries['AI'] = esc_html__( 'Anguilla', 'tcb-landing' );
-		$countries['AQ'] = esc_html__( 'Antarctica', 'tcb-landing' );
-		$countries['AG'] = esc_html__( 'Antigua and Barbuda', 'tcb-landing' );
-		$countries['AR'] = esc_html__( 'Argentina', 'tcb-landing' );
-		$countries['AM'] = esc_html__( 'Armenia (Հայաստան)', 'tcb-landing' );
-		$countries['AW'] = esc_html__( 'Aruba', 'tcb-landing' );
-		$countries['AC'] = esc_html__( 'Ascension Island', 'tcb-landing' );
-		$countries['AU'] = esc_html__( 'Australia', 'tcb-landing' );
-		$countries['AT'] = esc_html__( 'Austria (Österreich)', 'tcb-landing' );
-		$countries['AZ'] = esc_html__( 'Azerbaijan (Azərbaycan)', 'tcb-landing' );
-		$countries['BS'] = esc_html__( 'Bahamas', 'tcb-landing' );
-		$countries['BH'] = esc_html__( 'Bahrain (‫البحرين‬‎)', 'tcb-landing' );
-		$countries['BD'] = esc_html__( 'Bangladesh (বাংলাদেশ)', 'tcb-landing' );
-		$countries['BB'] = esc_html__( 'Barbados', 'tcb-landing' );
-		$countries['BY'] = esc_html__( 'Belarus (Беларусь)', 'tcb-landing' );
-		$countries['BE'] = esc_html__( 'Belgium (België)', 'tcb-landing' );
-		$countries['BZ'] = esc_html__( 'Belize', 'tcb-landing' );
-		$countries['BJ'] = esc_html__( 'Benin (Bénin)', 'tcb-landing' );
-		$countries['BM'] = esc_html__( 'Bermuda', 'tcb-landing' );
-		$countries['BT'] = esc_html__( 'Bhutan (འབྲུག)', 'tcb-landing' );
-		$countries['BO'] = esc_html__( 'Bolivia', 'tcb-landing' );
-		$countries['BA'] = esc_html__( 'Bosnia and Herzegovina (Босна и Херцеговина)', 'tcb-landing' );
-		$countries['BW'] = esc_html__( 'Botswana', 'tcb-landing' );
-		$countries['BV'] = esc_html__( 'Bouvet Island', 'tcb-landing' );
-		$countries['BR'] = esc_html__( 'Brazil (Brasil)', 'tcb-landing' );
-		$countries['IO'] = esc_html__( 'British Indian Ocean Territory', 'tcb-landing' );
-		$countries['VG'] = esc_html__( 'British Virgin Islands', 'tcb-landing' );
-		$countries['BN'] = esc_html__( 'Brunei', 'tcb-landing' );
-		$countries['BG'] = esc_html__( 'Bulgaria (България)', 'tcb-landing' );
-		$countries['BF'] = esc_html__( 'Burkina Faso', 'tcb-landing' );
-		$countries['BI'] = esc_html__( 'Burundi (Uburundi)', 'tcb-landing' );
-		$countries['KH'] = esc_html__( 'Cambodia (កម្ពុជា)', 'tcb-landing' );
-		$countries['CM'] = esc_html__( 'Cameroon (Cameroun)', 'tcb-landing' );
-		$countries['CA'] = esc_html__( 'Canada', 'tcb-landing' );
-		$countries['IC'] = esc_html__( 'Canary Islands (islas Canarias)', 'tcb-landing' );
-		$countries['CV'] = esc_html__( 'Cape Verde (Kabu Verdi)', 'tcb-landing' );
-		$countries['BQ'] = esc_html__( 'Caribbean Netherlands', 'tcb-landing' );
-		$countries['KY'] = esc_html__( 'Cayman Islands', 'tcb-landing' );
-		$countries['CF'] = esc_html__( 'Central African Republic (République centrafricaine)', 'tcb-landing' );
-		$countries['EA'] = esc_html__( 'Ceuta and Melilla (Ceuta y Melilla)', 'tcb-landing' );
-		$countries['TD'] = esc_html__( 'Chad (Tchad)', 'tcb-landing' );
-		$countries['CL'] = esc_html__( 'Chile', 'tcb-landing' );
-		$countries['CN'] = esc_html__( 'China (中国)', 'tcb-landing' );
-		$countries['CX'] = esc_html__( 'Christmas Island', 'tcb-landing' );
-		$countries['CP'] = esc_html__( 'Clipperton Island', 'tcb-landing' );
-		$countries['CC'] = esc_html__( 'Cocos (Keeling) Islands (Kepulauan Cocos (Keeling))', 'tcb-landing' );
-		$countries['CO'] = esc_html__( 'Colombia', 'tcb-landing' );
-		$countries['KM'] = esc_html__( 'Comoros (‫جزر القمر‬‎)', 'tcb-landing' );
-		$countries['CD'] = esc_html__( 'Congo (DRC) (Jamhuri ya Kidemokrasia ya Kongo)', 'tcb-landing' );
-		$countries['CG'] = esc_html__( 'Congo (Republic) (Congo-Brazzaville)', 'tcb-landing' );
-		$countries['CK'] = esc_html__( 'Cook Islands', 'tcb-landing' );
-		$countries['CR'] = esc_html__( 'Costa Rica', 'tcb-landing' );
-		$countries['CI'] = esc_html__( 'Côte d’Ivoire', 'tcb-landing' );
-		$countries['HR'] = esc_html__( 'Croatia (Hrvatska)', 'tcb-landing' );
-		$countries['CU'] = esc_html__( 'Cuba', 'tcb-landing' );
-		$countries['CW'] = esc_html__( 'Curaçao', 'tcb-landing' );
-		$countries['CY'] = esc_html__( 'Cyprus (Κύπρος)', 'tcb-landing' );
-		$countries['CZ'] = esc_html__( 'Czech Republic (Česká republika)', 'tcb-landing' );
-		$countries['DK'] = esc_html__( 'Denmark (Danmark)', 'tcb-landing' );
-		$countries['DG'] = esc_html__( 'Diego Garcia', 'tcb-landing' );
-		$countries['DJ'] = esc_html__( 'Djibouti', 'tcb-landing' );
-		$countries['DM'] = esc_html__( 'Dominica', 'tcb-landing' );
-		$countries['DO'] = esc_html__( 'Dominican Republic (República Dominicana)', 'tcb-landing' );
-		$countries['EC'] = esc_html__( 'Ecuador', 'tcb-landing' );
-		$countries['EG'] = esc_html__( 'Egypt (‫مصر‬‎)', 'tcb-landing' );
-		$countries['SV'] = esc_html__( 'El Salvador', 'tcb-landing' );
-		$countries['GQ'] = esc_html__( 'Equatorial Guinea (Guinea Ecuatorial)', 'tcb-landing' );
-		$countries['ER'] = esc_html__( 'Eritrea', 'tcb-landing' );
-		$countries['EE'] = esc_html__( 'Estonia (Eesti)', 'tcb-landing' );
-		$countries['ET'] = esc_html__( 'Ethiopia', 'tcb-landing' );
-		$countries['FK'] = esc_html__( 'Falkland Islands (Islas Malvinas)', 'tcb-landing' );
-		$countries['FO'] = esc_html__( 'Faroe Islands (Føroyar)', 'tcb-landing' );
-		$countries['FJ'] = esc_html__( 'Fiji', 'tcb-landing' );
-		$countries['FI'] = esc_html__( 'Finland (Suomi)', 'tcb-landing' );
-		$countries['FR'] = esc_html__( 'France', 'tcb-landing' );
-		$countries['GF'] = esc_html__( 'French Guiana (Guyane française)', 'tcb-landing' );
-		$countries['PF'] = esc_html__( 'French Polynesia (Polynésie française)', 'tcb-landing' );
-		$countries['TF'] = esc_html__( 'French Southern Territories (Terres australes françaises)', 'tcb-landing' );
-		$countries['GA'] = esc_html__( 'Gabon', 'tcb-landing' );
-		$countries['GM'] = esc_html__( 'Gambia', 'tcb-landing' );
-		$countries['GE'] = esc_html__( 'Georgia (საქართველო)', 'tcb-landing' );
-		$countries['DE'] = esc_html__( 'Germany (Deutschland)', 'tcb-landing' );
-		$countries['GH'] = esc_html__( 'Ghana (Gaana)', 'tcb-landing' );
-		$countries['GI'] = esc_html__( 'Gibraltar', 'tcb-landing' );
-		$countries['GR'] = esc_html__( 'Greece (Ελλάδα)', 'tcb-landing' );
-		$countries['GL'] = esc_html__( 'Greenland (Kalaallit Nunaat)', 'tcb-landing' );
-		$countries['GD'] = esc_html__( 'Grenada', 'tcb-landing' );
-		$countries['GP'] = esc_html__( 'Guadeloupe', 'tcb-landing' );
-		$countries['GU'] = esc_html__( 'Guam', 'tcb-landing' );
-		$countries['GT'] = esc_html__( 'Guatemala', 'tcb-landing' );
-		$countries['GG'] = esc_html__( 'Guernsey', 'tcb-landing' );
-		$countries['GN'] = esc_html__( 'Guinea (Guinée)', 'tcb-landing' );
-		$countries['GW'] = esc_html__( 'Guinea-Bissau (Guiné Bissau)', 'tcb-landing' );
-		$countries['GY'] = esc_html__( 'Guyana', 'tcb-landing' );
-		$countries['HT'] = esc_html__( 'Haiti', 'tcb-landing' );
-		$countries['HM'] = esc_html__( 'Heard & McDonald Islands', 'tcb-landing' );
-		$countries['HN'] = esc_html__( 'Honduras', 'tcb-landing' );
-		$countries['HK'] = esc_html__( 'Hong Kong (香港)', 'tcb-landing' );
-		$countries['HU'] = esc_html__( 'Hungary (Magyarország)', 'tcb-landing' );
-		$countries['IS'] = esc_html__( 'Iceland (Ísland)', 'tcb-landing' );
-		$countries['IN'] = esc_html__( 'India (भारत)', 'tcb-landing' );
-		$countries['ID'] = esc_html__( 'Indonesia', 'tcb-landing' );
-		$countries['IR'] = esc_html__( 'Iran (‫ایران‬‎)', 'tcb-landing' );
-		$countries['IQ'] = esc_html__( 'Iraq (‫العراق‬‎)', 'tcb-landing' );
-		$countries['IE'] = esc_html__( 'Ireland', 'tcb-landing' );
-		$countries['IM'] = esc_html__( 'Isle of Man', 'tcb-landing' );
-		$countries['IL'] = esc_html__( 'Israel (‫ישראל‬‎)', 'tcb-landing' );
-		$countries['IT'] = esc_html__( 'Italy (Italia)', 'tcb-landing' );
-		$countries['JM'] = esc_html__( 'Jamaica', 'tcb-landing' );
-		$countries['JP'] = esc_html__( 'Japan (日本)', 'tcb-landing' );
-		$countries['JE'] = esc_html__( 'Jersey', 'tcb-landing' );
-		$countries['JO'] = esc_html__( 'Jordan (‫الأردن‬‎)', 'tcb-landing' );
-		$countries['KZ'] = esc_html__( 'Kazakhstan (Казахстан)', 'tcb-landing' );
-		$countries['KE'] = esc_html__( 'Kenya', 'tcb-landing' );
-		$countries['KI'] = esc_html__( 'Kiribati', 'tcb-landing' );
-		$countries['XK'] = esc_html__( 'Kosovo (Kosovë)', 'tcb-landing' );
-		$countries['KW'] = esc_html__( 'Kuwait (‫الكويت‬‎)', 'tcb-landing' );
-		$countries['KG'] = esc_html__( 'Kyrgyzstan (Кыргызстан)', 'tcb-landing' );
-		$countries['LA'] = esc_html__( 'Laos (ລາວ)', 'tcb-landing' );
-		$countries['LV'] = esc_html__( 'Latvia (Latvija)', 'tcb-landing' );
-		$countries['LB'] = esc_html__( 'Lebanon (‫لبنان‬‎)', 'tcb-landing' );
-		$countries['LS'] = esc_html__( 'Lesotho', 'tcb-landing' );
-		$countries['LR'] = esc_html__( 'Liberia', 'tcb-landing' );
-		$countries['LY'] = esc_html__( 'Libya (‫ليبيا‬‎)', 'tcb-landing' );
-		$countries['LI'] = esc_html__( 'Liechtenstein', 'tcb-landing' );
-		$countries['LT'] = esc_html__( 'Lithuania (Lietuva)', 'tcb-landing' );
-		$countries['LU'] = esc_html__( 'Luxembourg', 'tcb-landing' );
-		$countries['MO'] = esc_html__( 'Macau (澳門)', 'tcb-landing' );
-		$countries['MK'] = esc_html__( 'Macedonia (FYROM) (Македонија)', 'tcb-landing' );
-		$countries['MG'] = esc_html__( 'Madagascar (Madagasikara)', 'tcb-landing' );
-		$countries['MW'] = esc_html__( 'Malawi', 'tcb-landing' );
-		$countries['MY'] = esc_html__( 'Malaysia', 'tcb-landing' );
-		$countries['MV'] = esc_html__( 'Maldives', 'tcb-landing' );
-		$countries['ML'] = esc_html__( 'Mali', 'tcb-landing' );
-		$countries['MT'] = esc_html__( 'Malta', 'tcb-landing' );
-		$countries['MH'] = esc_html__( 'Marshall Islands', 'tcb-landing' );
-		$countries['MQ'] = esc_html__( 'Martinique', 'tcb-landing' );
-		$countries['MR'] = esc_html__( 'Mauritania (‫موريتانيا‬‎)', 'tcb-landing' );
-		$countries['MU'] = esc_html__( 'Mauritius (Moris)', 'tcb-landing' );
-		$countries['YT'] = esc_html__( 'Mayotte', 'tcb-landing' );
-		$countries['MX'] = esc_html__( 'Mexico (México)', 'tcb-landing' );
-		$countries['FM'] = esc_html__( 'Micronesia', 'tcb-landing' );
-		$countries['MD'] = esc_html__( 'Moldova (Republica Moldova)', 'tcb-landing' );
-		$countries['MC'] = esc_html__( 'Monaco', 'tcb-landing' );
-		$countries['MN'] = esc_html__( 'Mongolia (Монгол)', 'tcb-landing' );
-		$countries['ME'] = esc_html__( 'Montenegro (Crna Gora)', 'tcb-landing' );
-		$countries['MS'] = esc_html__( 'Montserrat', 'tcb-landing' );
-		$countries['MA'] = esc_html__( 'Morocco (‫المغرب‬‎)', 'tcb-landing' );
-		$countries['MZ'] = esc_html__( 'Mozambique (Moçambique)', 'tcb-landing' );
-		$countries['MM'] = esc_html__( 'Myanmar (Burma) (မြန်မာ)', 'tcb-landing' );
-		$countries['NA'] = esc_html__( 'Namibia (Namibië)', 'tcb-landing' );
-		$countries['NR'] = esc_html__( 'Nauru', 'tcb-landing' );
-		$countries['NP'] = esc_html__( 'Nepal (नेपाल)', 'tcb-landing' );
-		$countries['NL'] = esc_html__( 'Netherlands (Nederland)', 'tcb-landing' );
-		$countries['NC'] = esc_html__( 'New Caledonia (Nouvelle-Calédonie)', 'tcb-landing' );
-		$countries['NZ'] = esc_html__( 'New Zealand', 'tcb-landing' );
-		$countries['NI'] = esc_html__( 'Nicaragua', 'tcb-landing' );
-		$countries['NE'] = esc_html__( 'Niger (Nijar)', 'tcb-landing' );
-		$countries['NG'] = esc_html__( 'Nigeria', 'tcb-landing' );
-		$countries['NU'] = esc_html__( 'Niue', 'tcb-landing' );
-		$countries['NF'] = esc_html__( 'Norfolk Island', 'tcb-landing' );
-		$countries['MP'] = esc_html__( 'Northern Mariana Islands', 'tcb-landing' );
-		$countries['KP'] = esc_html__( 'North Korea (조선 민주주의 인민 공화국)', 'tcb-landing' );
-		$countries['NO'] = esc_html__( 'Norway (Norge)', 'tcb-landing' );
-		$countries['OM'] = esc_html__( 'Oman (‫عُمان‬‎)', 'tcb-landing' );
-		$countries['PK'] = esc_html__( 'Pakistan (‫پاکستان‬‎)', 'tcb-landing' );
-		$countries['PW'] = esc_html__( 'Palau', 'tcb-landing' );
-		$countries['PS'] = esc_html__( 'Palestine (‫فلسطين‬‎)', 'tcb-landing' );
-		$countries['PA'] = esc_html__( 'Panama (Panamá)', 'tcb-landing' );
-		$countries['PG'] = esc_html__( 'Papua New Guinea', 'tcb-landing' );
-		$countries['PY'] = esc_html__( 'Paraguay', 'tcb-landing' );
-		$countries['PE'] = esc_html__( 'Peru (Perú)', 'tcb-landing' );
-		$countries['PH'] = esc_html__( 'Philippines', 'tcb-landing' );
-		$countries['PN'] = esc_html__( 'Pitcairn Islands', 'tcb-landing' );
-		$countries['PL'] = esc_html__( 'Poland (Polska)', 'tcb-landing' );
-		$countries['PT'] = esc_html__( 'Portugal', 'tcb-landing' );
-		$countries['PR'] = esc_html__( 'Puerto Rico', 'tcb-landing' );
-		$countries['QA'] = esc_html__( 'Qatar (‫قطر‬‎)', 'tcb-landing' );
-		$countries['RE'] = esc_html__( 'Réunion (La Réunion)', 'tcb-landing' );
-		$countries['RO'] = esc_html__( 'Romania (România)', 'tcb-landing' );
-		$countries['RU'] = esc_html__( 'Russia (Россия)', 'tcb-landing' );
-		$countries['RW'] = esc_html__( 'Rwanda', 'tcb-landing' );
-		$countries['BL'] = esc_html__( 'Saint Barthélemy (Saint-Barthélemy)', 'tcb-landing' );
-		$countries['SH'] = esc_html__( 'Saint Helena', 'tcb-landing' );
-		$countries['KN'] = esc_html__( 'Saint Kitts and Nevis', 'tcb-landing' );
-		$countries['LC'] = esc_html__( 'Saint Lucia', 'tcb-landing' );
-		$countries['MF'] = esc_html__( 'Saint Martin (Saint-Martin (partie française))', 'tcb-landing' );
-		$countries['PM'] = esc_html__( 'Saint Pierre and Miquelon (Saint-Pierre-et-Miquelon)', 'tcb-landing' );
-		$countries['WS'] = esc_html__( 'Samoa', 'tcb-landing' );
-		$countries['SM'] = esc_html__( 'San Marino', 'tcb-landing' );
-		$countries['ST'] = esc_html__( 'São Tomé and Príncipe (São Tomé e Príncipe)', 'tcb-landing' );
-		$countries['SA'] = esc_html__( 'Saudi Arabia (‫المملكة العربية السعودية‬‎)', 'tcb-landing' );
-		$countries['SN'] = esc_html__( 'Senegal (Sénégal)', 'tcb-landing' );
-		$countries['RS'] = esc_html__( 'Serbia (Србија)', 'tcb-landing' );
-		$countries['SC'] = esc_html__( 'Seychelles', 'tcb-landing' );
-		$countries['SL'] = esc_html__( 'Sierra Leone', 'tcb-landing' );
-		$countries['SG'] = esc_html__( 'Singapore', 'tcb-landing' );
-		$countries['SX'] = esc_html__( 'Sint Maarten', 'tcb-landing' );
-		$countries['SK'] = esc_html__( 'Slovakia (Slovensko)', 'tcb-landing' );
-		$countries['SI'] = esc_html__( 'Slovenia (Slovenija)', 'tcb-landing' );
-		$countries['SB'] = esc_html__( 'Solomon Islands', 'tcb-landing' );
-		$countries['SO'] = esc_html__( 'Somalia (Soomaaliya)', 'tcb-landing' );
-		$countries['ZA'] = esc_html__( 'South Africa', 'tcb-landing' );
-		$countries['GS'] = esc_html__( 'South Georgia & South Sandwich Islands', 'tcb-landing' );
-		$countries['KR'] = esc_html__( 'South Korea (대한민국)', 'tcb-landing' );
-		$countries['SS'] = esc_html__( 'South Sudan (‫جنوب السودان‬‎)', 'tcb-landing' );
-		$countries['ES'] = esc_html__( 'Spain (España)', 'tcb-landing' );
-		$countries['LK'] = esc_html__( 'Sri Lanka (ශ්‍රී ලංකාව)', 'tcb-landing' );
-		$countries['VC'] = esc_html__( 'St. Vincent & Grenadines', 'tcb-landing' );
-		$countries['SD'] = esc_html__( 'Sudan (‫السودان‬‎)', 'tcb-landing' );
-		$countries['SR'] = esc_html__( 'Suriname', 'tcb-landing' );
-		$countries['SJ'] = esc_html__( 'Svalbard and Jan Mayen (Svalbard og Jan Mayen)', 'tcb-landing' );
-		$countries['SZ'] = esc_html__( 'Swaziland', 'tcb-landing' );
-		$countries['SE'] = esc_html__( 'Sweden (Sverige)', 'tcb-landing' );
-		$countries['CH'] = esc_html__( 'Switzerland (Schweiz)', 'tcb-landing' );
-		$countries['SY'] = esc_html__( 'Syria (‫سوريا‬‎)', 'tcb-landing' );
-		$countries['TW'] = esc_html__( 'Taiwan (台灣)', 'tcb-landing' );
-		$countries['TJ'] = esc_html__( 'Tajikistan', 'tcb-landing' );
-		$countries['TZ'] = esc_html__( 'Tanzania', 'tcb-landing' );
-		$countries['TH'] = esc_html__( 'Thailand (ไทย)', 'tcb-landing' );
-		$countries['TL'] = esc_html__( 'Timor-Leste', 'tcb-landing' );
-		$countries['TG'] = esc_html__( 'Togo', 'tcb-landing' );
-		$countries['TK'] = esc_html__( 'Tokelau', 'tcb-landing' );
-		$countries['TO'] = esc_html__( 'Tonga', 'tcb-landing' );
-		$countries['TT'] = esc_html__( 'Trinidad and Tobago', 'tcb-landing' );
-		$countries['TA'] = esc_html__( 'Tristan da Cunha', 'tcb-landing' );
-		$countries['TN'] = esc_html__( 'Tunisia (‫تونس‬‎)', 'tcb-landing' );
-		$countries['TR'] = esc_html__( 'Turkey (Türkiye)', 'tcb-landing' );
-		$countries['TM'] = esc_html__( 'Turkmenistan', 'tcb-landing' );
-		$countries['TC'] = esc_html__( 'Turks and Caicos Islands', 'tcb-landing' );
-		$countries['TV'] = esc_html__( 'Tuvalu', 'tcb-landing' );
-		$countries['UM'] = esc_html__( 'U.S. Outlying Islands', 'tcb-landing' );
-		$countries['VI'] = esc_html__( 'U.S. Virgin Islands', 'tcb-landing' );
-		$countries['UG'] = esc_html__( 'Uganda', 'tcb-landing' );
-		$countries['UA'] = esc_html__( 'Ukraine (Україна)', 'tcb-landing' );
-		$countries['AE'] = esc_html__( 'United Arab Emirates (‫الإمارات العربية المتحدة‬‎)', 'tcb-landing' );
-		$countries['GB'] = esc_html__( 'United Kingdom', 'tcb-landing' );
-		$countries['US'] = esc_html__( 'United States', 'tcb-landing' );
-		$countries['UY'] = esc_html__( 'Uruguay', 'tcb-landing' );
-		$countries['UZ'] = esc_html__( 'Uzbekistan (Oʻzbekiston)', 'tcb-landing' );
-		$countries['VU'] = esc_html__( 'Vanuatu', 'tcb-landing' );
-		$countries['VA'] = esc_html__( 'Vatican City (Città del Vaticano)', 'tcb-landing' );
-		$countries['VE'] = esc_html__( 'Venezuela', 'tcb-landing' );
-		$countries['VN'] = esc_html__( 'Vietnam (Việt Nam)', 'tcb-landing' );
-		$countries['WF'] = esc_html__( 'Wallis and Futuna', 'tcb-landing' );
-		$countries['EH'] = esc_html__( 'Western Sahara (‫الصحراء الغربية‬‎)', 'tcb-landing' );
-		$countries['YE'] = esc_html__( 'Yemen (‫اليمن‬‎)', 'tcb-landing' );
-		$countries['ZM'] = esc_html__( 'Zambia', 'tcb-landing' );
-		$countries['ZW'] = esc_html__( 'Zimbabwe', 'tcb-landing' );
+		$countries['AF'] = esc_html__( 'Afghanistan (‫افغانستان‬‎)', 'yosb' );
+		$countries['AX'] = esc_html__( 'Åland Islands (Åland)', 'yosb' );
+		$countries['AL'] = esc_html__( 'Albania (Shqipëri)', 'yosb' );
+		$countries['DZ'] = esc_html__( 'Algeria (‫الجزائر‬‎)', 'yosb' );
+		$countries['AS'] = esc_html__( 'American Samoa', 'yosb' );
+		$countries['AD'] = esc_html__( 'Andorra', 'yosb' );
+		$countries['AO'] = esc_html__( 'Angola', 'yosb' );
+		$countries['AI'] = esc_html__( 'Anguilla', 'yosb' );
+		$countries['AQ'] = esc_html__( 'Antarctica', 'yosb' );
+		$countries['AG'] = esc_html__( 'Antigua and Barbuda', 'yosb' );
+		$countries['AR'] = esc_html__( 'Argentina', 'yosb' );
+		$countries['AM'] = esc_html__( 'Armenia (Հայաստան)', 'yosb' );
+		$countries['AW'] = esc_html__( 'Aruba', 'yosb' );
+		$countries['AC'] = esc_html__( 'Ascension Island', 'yosb' );
+		$countries['AU'] = esc_html__( 'Australia', 'yosb' );
+		$countries['AT'] = esc_html__( 'Austria (Österreich)', 'yosb' );
+		$countries['AZ'] = esc_html__( 'Azerbaijan (Azərbaycan)', 'yosb' );
+		$countries['BS'] = esc_html__( 'Bahamas', 'yosb' );
+		$countries['BH'] = esc_html__( 'Bahrain (‫البحرين‬‎)', 'yosb' );
+		$countries['BD'] = esc_html__( 'Bangladesh (বাংলাদেশ)', 'yosb' );
+		$countries['BB'] = esc_html__( 'Barbados', 'yosb' );
+		$countries['BY'] = esc_html__( 'Belarus (Беларусь)', 'yosb' );
+		$countries['BE'] = esc_html__( 'Belgium (België)', 'yosb' );
+		$countries['BZ'] = esc_html__( 'Belize', 'yosb' );
+		$countries['BJ'] = esc_html__( 'Benin (Bénin)', 'yosb' );
+		$countries['BM'] = esc_html__( 'Bermuda', 'yosb' );
+		$countries['BT'] = esc_html__( 'Bhutan (འབྲུག)', 'yosb' );
+		$countries['BO'] = esc_html__( 'Bolivia', 'yosb' );
+		$countries['BA'] = esc_html__( 'Bosnia and Herzegovina (Босна и Херцеговина)', 'yosb' );
+		$countries['BW'] = esc_html__( 'Botswana', 'yosb' );
+		$countries['BV'] = esc_html__( 'Bouvet Island', 'yosb' );
+		$countries['BR'] = esc_html__( 'Brazil (Brasil)', 'yosb' );
+		$countries['IO'] = esc_html__( 'British Indian Ocean Territory', 'yosb' );
+		$countries['VG'] = esc_html__( 'British Virgin Islands', 'yosb' );
+		$countries['BN'] = esc_html__( 'Brunei', 'yosb' );
+		$countries['BG'] = esc_html__( 'Bulgaria (България)', 'yosb' );
+		$countries['BF'] = esc_html__( 'Burkina Faso', 'yosb' );
+		$countries['BI'] = esc_html__( 'Burundi (Uburundi)', 'yosb' );
+		$countries['KH'] = esc_html__( 'Cambodia (កម្ពុជា)', 'yosb' );
+		$countries['CM'] = esc_html__( 'Cameroon (Cameroun)', 'yosb' );
+		$countries['CA'] = esc_html__( 'Canada', 'yosb' );
+		$countries['IC'] = esc_html__( 'Canary Islands (islas Canarias)', 'yosb' );
+		$countries['CV'] = esc_html__( 'Cape Verde (Kabu Verdi)', 'yosb' );
+		$countries['BQ'] = esc_html__( 'Caribbean Netherlands', 'yosb' );
+		$countries['KY'] = esc_html__( 'Cayman Islands', 'yosb' );
+		$countries['CF'] = esc_html__( 'Central African Republic (République centrafricaine)', 'yosb' );
+		$countries['EA'] = esc_html__( 'Ceuta and Melilla (Ceuta y Melilla)', 'yosb' );
+		$countries['TD'] = esc_html__( 'Chad (Tchad)', 'yosb' );
+		$countries['CL'] = esc_html__( 'Chile', 'yosb' );
+		$countries['CN'] = esc_html__( 'China (中国)', 'yosb' );
+		$countries['CX'] = esc_html__( 'Christmas Island', 'yosb' );
+		$countries['CP'] = esc_html__( 'Clipperton Island', 'yosb' );
+		$countries['CC'] = esc_html__( 'Cocos (Keeling) Islands (Kepulauan Cocos (Keeling))', 'yosb' );
+		$countries['CO'] = esc_html__( 'Colombia', 'yosb' );
+		$countries['KM'] = esc_html__( 'Comoros (‫جزر القمر‬‎)', 'yosb' );
+		$countries['CD'] = esc_html__( 'Congo (DRC) (Jamhuri ya Kidemokrasia ya Kongo)', 'yosb' );
+		$countries['CG'] = esc_html__( 'Congo (Republic) (Congo-Brazzaville)', 'yosb' );
+		$countries['CK'] = esc_html__( 'Cook Islands', 'yosb' );
+		$countries['CR'] = esc_html__( 'Costa Rica', 'yosb' );
+		$countries['CI'] = esc_html__( 'Côte d’Ivoire', 'yosb' );
+		$countries['HR'] = esc_html__( 'Croatia (Hrvatska)', 'yosb' );
+		$countries['CU'] = esc_html__( 'Cuba', 'yosb' );
+		$countries['CW'] = esc_html__( 'Curaçao', 'yosb' );
+		$countries['CY'] = esc_html__( 'Cyprus (Κύπρος)', 'yosb' );
+		$countries['CZ'] = esc_html__( 'Czech Republic (Česká republika)', 'yosb' );
+		$countries['DK'] = esc_html__( 'Denmark (Danmark)', 'yosb' );
+		$countries['DG'] = esc_html__( 'Diego Garcia', 'yosb' );
+		$countries['DJ'] = esc_html__( 'Djibouti', 'yosb' );
+		$countries['DM'] = esc_html__( 'Dominica', 'yosb' );
+		$countries['DO'] = esc_html__( 'Dominican Republic (República Dominicana)', 'yosb' );
+		$countries['EC'] = esc_html__( 'Ecuador', 'yosb' );
+		$countries['EG'] = esc_html__( 'Egypt (‫مصر‬‎)', 'yosb' );
+		$countries['SV'] = esc_html__( 'El Salvador', 'yosb' );
+		$countries['GQ'] = esc_html__( 'Equatorial Guinea (Guinea Ecuatorial)', 'yosb' );
+		$countries['ER'] = esc_html__( 'Eritrea', 'yosb' );
+		$countries['EE'] = esc_html__( 'Estonia (Eesti)', 'yosb' );
+		$countries['ET'] = esc_html__( 'Ethiopia', 'yosb' );
+		$countries['FK'] = esc_html__( 'Falkland Islands (Islas Malvinas)', 'yosb' );
+		$countries['FO'] = esc_html__( 'Faroe Islands (Føroyar)', 'yosb' );
+		$countries['FJ'] = esc_html__( 'Fiji', 'yosb' );
+		$countries['FI'] = esc_html__( 'Finland (Suomi)', 'yosb' );
+		$countries['FR'] = esc_html__( 'France', 'yosb' );
+		$countries['GF'] = esc_html__( 'French Guiana (Guyane française)', 'yosb' );
+		$countries['PF'] = esc_html__( 'French Polynesia (Polynésie française)', 'yosb' );
+		$countries['TF'] = esc_html__( 'French Southern Territories (Terres australes françaises)', 'yosb' );
+		$countries['GA'] = esc_html__( 'Gabon', 'yosb' );
+		$countries['GM'] = esc_html__( 'Gambia', 'yosb' );
+		$countries['GE'] = esc_html__( 'Georgia (საქართველო)', 'yosb' );
+		$countries['DE'] = esc_html__( 'Germany (Deutschland)', 'yosb' );
+		$countries['GH'] = esc_html__( 'Ghana (Gaana)', 'yosb' );
+		$countries['GI'] = esc_html__( 'Gibraltar', 'yosb' );
+		$countries['GR'] = esc_html__( 'Greece (Ελλάδα)', 'yosb' );
+		$countries['GL'] = esc_html__( 'Greenland (Kalaallit Nunaat)', 'yosb' );
+		$countries['GD'] = esc_html__( 'Grenada', 'yosb' );
+		$countries['GP'] = esc_html__( 'Guadeloupe', 'yosb' );
+		$countries['GU'] = esc_html__( 'Guam', 'yosb' );
+		$countries['GT'] = esc_html__( 'Guatemala', 'yosb' );
+		$countries['GG'] = esc_html__( 'Guernsey', 'yosb' );
+		$countries['GN'] = esc_html__( 'Guinea (Guinée)', 'yosb' );
+		$countries['GW'] = esc_html__( 'Guinea-Bissau (Guiné Bissau)', 'yosb' );
+		$countries['GY'] = esc_html__( 'Guyana', 'yosb' );
+		$countries['HT'] = esc_html__( 'Haiti', 'yosb' );
+		$countries['HM'] = esc_html__( 'Heard & McDonald Islands', 'yosb' );
+		$countries['HN'] = esc_html__( 'Honduras', 'yosb' );
+		$countries['HK'] = esc_html__( 'Hong Kong (香港)', 'yosb' );
+		$countries['HU'] = esc_html__( 'Hungary (Magyarország)', 'yosb' );
+		$countries['IS'] = esc_html__( 'Iceland (Ísland)', 'yosb' );
+		$countries['IN'] = esc_html__( 'India (भारत)', 'yosb' );
+		$countries['ID'] = esc_html__( 'Indonesia', 'yosb' );
+		$countries['IR'] = esc_html__( 'Iran (‫ایران‬‎)', 'yosb' );
+		$countries['IQ'] = esc_html__( 'Iraq (‫العراق‬‎)', 'yosb' );
+		$countries['IE'] = esc_html__( 'Ireland', 'yosb' );
+		$countries['IM'] = esc_html__( 'Isle of Man', 'yosb' );
+		$countries['IL'] = esc_html__( 'Israel (‫ישראל‬‎)', 'yosb' );
+		$countries['IT'] = esc_html__( 'Italy (Italia)', 'yosb' );
+		$countries['JM'] = esc_html__( 'Jamaica', 'yosb' );
+		$countries['JP'] = esc_html__( 'Japan (日本)', 'yosb' );
+		$countries['JE'] = esc_html__( 'Jersey', 'yosb' );
+		$countries['JO'] = esc_html__( 'Jordan (‫الأردن‬‎)', 'yosb' );
+		$countries['KZ'] = esc_html__( 'Kazakhstan (Казахстан)', 'yosb' );
+		$countries['KE'] = esc_html__( 'Kenya', 'yosb' );
+		$countries['KI'] = esc_html__( 'Kiribati', 'yosb' );
+		$countries['XK'] = esc_html__( 'Kosovo (Kosovë)', 'yosb' );
+		$countries['KW'] = esc_html__( 'Kuwait (‫الكويت‬‎)', 'yosb' );
+		$countries['KG'] = esc_html__( 'Kyrgyzstan (Кыргызстан)', 'yosb' );
+		$countries['LA'] = esc_html__( 'Laos (ລາວ)', 'yosb' );
+		$countries['LV'] = esc_html__( 'Latvia (Latvija)', 'yosb' );
+		$countries['LB'] = esc_html__( 'Lebanon (‫لبنان‬‎)', 'yosb' );
+		$countries['LS'] = esc_html__( 'Lesotho', 'yosb' );
+		$countries['LR'] = esc_html__( 'Liberia', 'yosb' );
+		$countries['LY'] = esc_html__( 'Libya (‫ليبيا‬‎)', 'yosb' );
+		$countries['LI'] = esc_html__( 'Liechtenstein', 'yosb' );
+		$countries['LT'] = esc_html__( 'Lithuania (Lietuva)', 'yosb' );
+		$countries['LU'] = esc_html__( 'Luxembourg', 'yosb' );
+		$countries['MO'] = esc_html__( 'Macau (澳門)', 'yosb' );
+		$countries['MK'] = esc_html__( 'Macedonia (FYROM) (Македонија)', 'yosb' );
+		$countries['MG'] = esc_html__( 'Madagascar (Madagasikara)', 'yosb' );
+		$countries['MW'] = esc_html__( 'Malawi', 'yosb' );
+		$countries['MY'] = esc_html__( 'Malaysia', 'yosb' );
+		$countries['MV'] = esc_html__( 'Maldives', 'yosb' );
+		$countries['ML'] = esc_html__( 'Mali', 'yosb' );
+		$countries['MT'] = esc_html__( 'Malta', 'yosb' );
+		$countries['MH'] = esc_html__( 'Marshall Islands', 'yosb' );
+		$countries['MQ'] = esc_html__( 'Martinique', 'yosb' );
+		$countries['MR'] = esc_html__( 'Mauritania (‫موريتانيا‬‎)', 'yosb' );
+		$countries['MU'] = esc_html__( 'Mauritius (Moris)', 'yosb' );
+		$countries['YT'] = esc_html__( 'Mayotte', 'yosb' );
+		$countries['MX'] = esc_html__( 'Mexico (México)', 'yosb' );
+		$countries['FM'] = esc_html__( 'Micronesia', 'yosb' );
+		$countries['MD'] = esc_html__( 'Moldova (Republica Moldova)', 'yosb' );
+		$countries['MC'] = esc_html__( 'Monaco', 'yosb' );
+		$countries['MN'] = esc_html__( 'Mongolia (Монгол)', 'yosb' );
+		$countries['ME'] = esc_html__( 'Montenegro (Crna Gora)', 'yosb' );
+		$countries['MS'] = esc_html__( 'Montserrat', 'yosb' );
+		$countries['MA'] = esc_html__( 'Morocco (‫المغرب‬‎)', 'yosb' );
+		$countries['MZ'] = esc_html__( 'Mozambique (Moçambique)', 'yosb' );
+		$countries['MM'] = esc_html__( 'Myanmar (Burma) (မြန်မာ)', 'yosb' );
+		$countries['NA'] = esc_html__( 'Namibia (Namibië)', 'yosb' );
+		$countries['NR'] = esc_html__( 'Nauru', 'yosb' );
+		$countries['NP'] = esc_html__( 'Nepal (नेपाल)', 'yosb' );
+		$countries['NL'] = esc_html__( 'Netherlands (Nederland)', 'yosb' );
+		$countries['NC'] = esc_html__( 'New Caledonia (Nouvelle-Calédonie)', 'yosb' );
+		$countries['NZ'] = esc_html__( 'New Zealand', 'yosb' );
+		$countries['NI'] = esc_html__( 'Nicaragua', 'yosb' );
+		$countries['NE'] = esc_html__( 'Niger (Nijar)', 'yosb' );
+		$countries['NG'] = esc_html__( 'Nigeria', 'yosb' );
+		$countries['NU'] = esc_html__( 'Niue', 'yosb' );
+		$countries['NF'] = esc_html__( 'Norfolk Island', 'yosb' );
+		$countries['MP'] = esc_html__( 'Northern Mariana Islands', 'yosb' );
+		$countries['KP'] = esc_html__( 'North Korea (조선 민주주의 인민 공화국)', 'yosb' );
+		$countries['NO'] = esc_html__( 'Norway (Norge)', 'yosb' );
+		$countries['OM'] = esc_html__( 'Oman (‫عُمان‬‎)', 'yosb' );
+		$countries['PK'] = esc_html__( 'Pakistan (‫پاکستان‬‎)', 'yosb' );
+		$countries['PW'] = esc_html__( 'Palau', 'yosb' );
+		$countries['PS'] = esc_html__( 'Palestine (‫فلسطين‬‎)', 'yosb' );
+		$countries['PA'] = esc_html__( 'Panama (Panamá)', 'yosb' );
+		$countries['PG'] = esc_html__( 'Papua New Guinea', 'yosb' );
+		$countries['PY'] = esc_html__( 'Paraguay', 'yosb' );
+		$countries['PE'] = esc_html__( 'Peru (Perú)', 'yosb' );
+		$countries['PH'] = esc_html__( 'Philippines', 'yosb' );
+		$countries['PN'] = esc_html__( 'Pitcairn Islands', 'yosb' );
+		$countries['PL'] = esc_html__( 'Poland (Polska)', 'yosb' );
+		$countries['PT'] = esc_html__( 'Portugal', 'yosb' );
+		$countries['PR'] = esc_html__( 'Puerto Rico', 'yosb' );
+		$countries['QA'] = esc_html__( 'Qatar (‫قطر‬‎)', 'yosb' );
+		$countries['RE'] = esc_html__( 'Réunion (La Réunion)', 'yosb' );
+		$countries['RO'] = esc_html__( 'Romania (România)', 'yosb' );
+		$countries['RU'] = esc_html__( 'Russia (Россия)', 'yosb' );
+		$countries['RW'] = esc_html__( 'Rwanda', 'yosb' );
+		$countries['BL'] = esc_html__( 'Saint Barthélemy (Saint-Barthélemy)', 'yosb' );
+		$countries['SH'] = esc_html__( 'Saint Helena', 'yosb' );
+		$countries['KN'] = esc_html__( 'Saint Kitts and Nevis', 'yosb' );
+		$countries['LC'] = esc_html__( 'Saint Lucia', 'yosb' );
+		$countries['MF'] = esc_html__( 'Saint Martin (Saint-Martin (partie française))', 'yosb' );
+		$countries['PM'] = esc_html__( 'Saint Pierre and Miquelon (Saint-Pierre-et-Miquelon)', 'yosb' );
+		$countries['WS'] = esc_html__( 'Samoa', 'yosb' );
+		$countries['SM'] = esc_html__( 'San Marino', 'yosb' );
+		$countries['ST'] = esc_html__( 'São Tomé and Príncipe (São Tomé e Príncipe)', 'yosb' );
+		$countries['SA'] = esc_html__( 'Saudi Arabia (‫المملكة العربية السعودية‬‎)', 'yosb' );
+		$countries['SN'] = esc_html__( 'Senegal (Sénégal)', 'yosb' );
+		$countries['RS'] = esc_html__( 'Serbia (Србија)', 'yosb' );
+		$countries['SC'] = esc_html__( 'Seychelles', 'yosb' );
+		$countries['SL'] = esc_html__( 'Sierra Leone', 'yosb' );
+		$countries['SG'] = esc_html__( 'Singapore', 'yosb' );
+		$countries['SX'] = esc_html__( 'Sint Maarten', 'yosb' );
+		$countries['SK'] = esc_html__( 'Slovakia (Slovensko)', 'yosb' );
+		$countries['SI'] = esc_html__( 'Slovenia (Slovenija)', 'yosb' );
+		$countries['SB'] = esc_html__( 'Solomon Islands', 'yosb' );
+		$countries['SO'] = esc_html__( 'Somalia (Soomaaliya)', 'yosb' );
+		$countries['ZA'] = esc_html__( 'South Africa', 'yosb' );
+		$countries['GS'] = esc_html__( 'South Georgia & South Sandwich Islands', 'yosb' );
+		$countries['KR'] = esc_html__( 'South Korea (대한민국)', 'yosb' );
+		$countries['SS'] = esc_html__( 'South Sudan (‫جنوب السودان‬‎)', 'yosb' );
+		$countries['ES'] = esc_html__( 'Spain (España)', 'yosb' );
+		$countries['LK'] = esc_html__( 'Sri Lanka (ශ්‍රී ලංකාව)', 'yosb' );
+		$countries['VC'] = esc_html__( 'St. Vincent & Grenadines', 'yosb' );
+		$countries['SD'] = esc_html__( 'Sudan (‫السودان‬‎)', 'yosb' );
+		$countries['SR'] = esc_html__( 'Suriname', 'yosb' );
+		$countries['SJ'] = esc_html__( 'Svalbard and Jan Mayen (Svalbard og Jan Mayen)', 'yosb' );
+		$countries['SZ'] = esc_html__( 'Swaziland', 'yosb' );
+		$countries['SE'] = esc_html__( 'Sweden (Sverige)', 'yosb' );
+		$countries['CH'] = esc_html__( 'Switzerland (Schweiz)', 'yosb' );
+		$countries['SY'] = esc_html__( 'Syria (‫سوريا‬‎)', 'yosb' );
+		$countries['TW'] = esc_html__( 'Taiwan (台灣)', 'yosb' );
+		$countries['TJ'] = esc_html__( 'Tajikistan', 'yosb' );
+		$countries['TZ'] = esc_html__( 'Tanzania', 'yosb' );
+		$countries['TH'] = esc_html__( 'Thailand (ไทย)', 'yosb' );
+		$countries['TL'] = esc_html__( 'Timor-Leste', 'yosb' );
+		$countries['TG'] = esc_html__( 'Togo', 'yosb' );
+		$countries['TK'] = esc_html__( 'Tokelau', 'yosb' );
+		$countries['TO'] = esc_html__( 'Tonga', 'yosb' );
+		$countries['TT'] = esc_html__( 'Trinidad and Tobago', 'yosb' );
+		$countries['TA'] = esc_html__( 'Tristan da Cunha', 'yosb' );
+		$countries['TN'] = esc_html__( 'Tunisia (‫تونس‬‎)', 'yosb' );
+		$countries['TR'] = esc_html__( 'Turkey (Türkiye)', 'yosb' );
+		$countries['TM'] = esc_html__( 'Turkmenistan', 'yosb' );
+		$countries['TC'] = esc_html__( 'Turks and Caicos Islands', 'yosb' );
+		$countries['TV'] = esc_html__( 'Tuvalu', 'yosb' );
+		$countries['UM'] = esc_html__( 'U.S. Outlying Islands', 'yosb' );
+		$countries['VI'] = esc_html__( 'U.S. Virgin Islands', 'yosb' );
+		$countries['UG'] = esc_html__( 'Uganda', 'yosb' );
+		$countries['UA'] = esc_html__( 'Ukraine (Україна)', 'yosb' );
+		$countries['AE'] = esc_html__( 'United Arab Emirates (‫الإمارات العربية المتحدة‬‎)', 'yosb' );
+		$countries['GB'] = esc_html__( 'United Kingdom', 'yosb' );
+		$countries['US'] = esc_html__( 'United States', 'yosb' );
+		$countries['UY'] = esc_html__( 'Uruguay', 'yosb' );
+		$countries['UZ'] = esc_html__( 'Uzbekistan (Oʻzbekiston)', 'yosb' );
+		$countries['VU'] = esc_html__( 'Vanuatu', 'yosb' );
+		$countries['VA'] = esc_html__( 'Vatican City (Città del Vaticano)', 'yosb' );
+		$countries['VE'] = esc_html__( 'Venezuela', 'yosb' );
+		$countries['VN'] = esc_html__( 'Vietnam (Việt Nam)', 'yosb' );
+		$countries['WF'] = esc_html__( 'Wallis and Futuna', 'yosb' );
+		$countries['EH'] = esc_html__( 'Western Sahara (‫الصحراء الغربية‬‎)', 'yosb' );
+		$countries['YE'] = esc_html__( 'Yemen (‫اليمن‬‎)', 'yosb' );
+		$countries['ZM'] = esc_html__( 'Zambia', 'yosb' );
+		$countries['ZW'] = esc_html__( 'Zimbabwe', 'yosb' );
 
 		if ( ! empty( $country ) ) {
 

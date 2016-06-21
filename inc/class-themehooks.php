@@ -85,7 +85,7 @@ class yosb_Themehooks {
 					$args['after'] 			= '</span>';
 					$args['before'] 		= '<span rel="v:child" typeof="v:Breadcrumb">';
 					$args['delimiter'] 		= '&nbsp;>&nbsp;';
-					$args['home'] 			= esc_html_x( 'Home', 'breadcrumb', 'tcb-landing' );
+					$args['home'] 			= esc_html_x( 'Home', 'breadcrumb', 'yosb' );
 					$args['wrap_after'] 	= '</span></span></nav>';
 					$args['wrap_before'] 	= '<nav class="woocommerce-breadcrumb" ' . ( is_single() ? 'itemprop="breadcrumb"' : '' ) . '><span xmlns:v="http://rdf.data-vocabulary.org/#"><span typeof="v:Breadcrumb">';
 
@@ -150,16 +150,16 @@ class yosb_Themehooks {
 	public function footer_legal_links() {
 
 		?><ul class="legal-links">
-			<li><a href="<?php echo esc_url( get_admin_url() ); ?>">&copy; <?php echo date( 'Y' ) . ' ' . esc_html__( 'Town and Country Financial Corporation', 'tcb-landing' ); ?></a></li>
-			<li><?php esc_html_e( 'All Rights Reserved', 'tcb-landing' ); ?></li>
+			<li><a href="<?php echo esc_url( get_admin_url() ); ?>">&copy; <?php echo date( 'Y' ) . ' ' . esc_html__( 'Town and Country Financial Corporation', 'yosb' ); ?></a></li>
+			<li><?php esc_html_e( 'All Rights Reserved', 'yosb' ); ?></li>
 			<li>
-				<a href="http://townandcountrybank.com/sites/default/files/u14/December2013Final.pdf" target="_self"><?php esc_html_e( 'Financial Privacy Disclosure', 'tcb-landing' ); ?></a>
+				<a href="http://townandcountrybank.com/sites/default/files/u14/December2013Final.pdf" target="_self"><?php esc_html_e( 'Financial Privacy Disclosure', 'yosb' ); ?></a>
 			</li>
 			<li>
-				<a href="http://townandcountrybank.com/webform/financial-privacy-opt-out-form" target="_self"><?php esc_html_e( 'Financial Privacy Opt-Out Form', 'tcb-landing' ); ?></a>
+				<a href="http://townandcountrybank.com/webform/financial-privacy-opt-out-form" target="_self"><?php esc_html_e( 'Financial Privacy Opt-Out Form', 'yosb' ); ?></a>
 			</li>
 			<li>
-				<a title="Disclosures" href="http://townandcountrybank.com/disclosures" target="_self"><?php esc_html_e( 'Other Disclosures', 'tcb-landing' ); ?></a>
+				<a title="Disclosures" href="http://townandcountrybank.com/disclosures" target="_self"><?php esc_html_e( 'Other Disclosures', 'yosb' ); ?></a>
 			</li>
 		</ul><?php
 
@@ -199,7 +199,7 @@ class yosb_Themehooks {
 		if ( ! is_404() ) { return; }
 
 		/* translators: %1$s: smiley */
-		$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'tcb-landing' ), convert_smilies( ':)' ) ) . '</p>';
+		$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'yosb' ), convert_smilies( ':)' ) ) . '</p>';
 
 		the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
 
@@ -218,7 +218,7 @@ class yosb_Themehooks {
 		if ( ! yosb_categorized_blog() ) { return; }
 
 		?><div class="widget widget_categories">
-			<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'tcb-landing' ); ?></h2>
+			<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'yosb' ); ?></h2>
 			<ul><?php
 
 				wp_list_categories( array(
@@ -311,7 +311,7 @@ class yosb_Themehooks {
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 				<span class="hamburger-box hamburger--arrowalt-r">
 					<span class="hamburger-inner"></span>
-				</span><?php esc_html_e( 'Menu', 'tcb-landing' ); ?></button><?php
+				</span><?php esc_html_e( 'Menu', 'yosb' ); ?></button><?php
 
 				$menu_args['menu_id'] 			= 'primary-menu';
 				$menu_args['menu'] 				= $meta['main-menu'][0];
@@ -484,7 +484,7 @@ class yosb_Themehooks {
 	 */
 	public function skip_link() {
 
-		?><a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'tcb-landing' ); ?></a><?php
+		?><a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'yosb' ); ?></a><?php
 
 	} // skip_link()
 
@@ -521,9 +521,9 @@ class yosb_Themehooks {
 		if ( ! is_404() ) { return; }
 
 		?><header class="page-header">
-			<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'tcb-landing' ); ?></h1>
+			<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'yosb' ); ?></h1>
 		</header><!-- .page-header -->
-		<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'tcb-landing' ); ?></p><?php
+		<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'yosb' ); ?></p><?php
 
 	} // title_404()
 
@@ -582,7 +582,7 @@ class yosb_Themehooks {
 
 		if ( ! is_home() ) { return; }
 
-		?><h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'tcb-landing' ); ?></h1><?php
+		?><h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'yosb' ); ?></h1><?php
 
 	} // title_none()
 
@@ -616,7 +616,7 @@ class yosb_Themehooks {
 		?><header class="page-header">
 			<h1 class="page-title"><?php
 
-				printf( esc_html__( 'Search Results for: %s', 'tcb-landing' ), '<span>' . get_search_query() . '</span>' );
+				printf( esc_html__( 'Search Results for: %s', 'yosb' ), '<span>' . get_search_query() . '</span>' );
 
 			?></h1>
 		</header><!-- .page-header --><?php

@@ -48,7 +48,7 @@ class yosb_Control {
 	 */
 	public function __construct() {
 
-		$this->theme_name 	= 'tcb-landing';
+		$this->theme_name 	= 'yosb';
 		$this->version 		= '1.0.0';
 
 		$this->load_dependencies();

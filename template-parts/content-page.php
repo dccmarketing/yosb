@@ -27,7 +27,7 @@
 		the_content();
 
 		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'tcb-landing' ),
+			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'yosb' ),
 			'after'  => '</div>',
 		) );
 
@@ -37,7 +37,7 @@
 
 	?><footer class="entry-footer"><?php
 
-		edit_post_link( esc_html__( 'Edit', 'tcb-landing' ), '<span class="edit-link">', '</span>' );
+		edit_post_link( esc_html__( 'Edit', 'yosb' ), '<span class="edit-link">', '</span>' );
 
 	?></footer><!-- .entry-footer --><?php
 
