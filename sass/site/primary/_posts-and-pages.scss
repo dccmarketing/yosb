@@ -1,0 +1,128 @@
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	hyphens 	: auto;
+	margin 		: 1.5em 0 0;
+	word-wrap 	: break-word;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+.site-content {
+	background-color 	: $light;
+	background-repeat 	: no-repeat;
+	padding-top 		: 240px;
+	position 			: relative;
+
+	@media only screen and (min-width: $bp__tablet) {
+		background-position : 50%;
+		height 				: 600px;
+		padding-top 		: 0;
+		text-shadow 		: 1px 1px 4px $brown;
+	}
+
+	@media only screen and (max-width: $bp__tablet - 1) {
+		&:before {
+			background-repeat 	: no-repeat;
+			background-size 	: cover;
+			content 			: "";
+			height 				: 240px;
+			position 			: absolute;
+			top 				: 0;
+			width 				: 100%;
+		}
+	}
+}
+
+.content-area {
+	overflow 	: auto;
+	width 		: 100%;
+
+	@media only screen and (min-width: $bp__tablet) {
+		margin 				: 0 auto;
+		max-width 			: $size__max-width;
+		padding: 0;
+
+		&.content-sidebar {
+			float 	: left;
+			margin 	: 0 2.5% 0 0;
+			width 	: 70%;
+		}
+
+		&.sidebar-content {
+			float 	: right;
+			margin 	: 0 0 0 2.5%;
+			width 	: 70%;
+		}
+	}
+}
+
+[role="main"] {
+
+	section {
+		//margin-bottom 	: 1.5em;
+		padding 		: 1em;
+
+		@media only screen and (min-width: $bp__tablet) {
+			color 		: $light;
+			margin 		: 0 auto;
+			max-width 	: $size__max-width;
+
+			a {
+				color: $light;
+			}
+		}
+	}
+
+	.headline {
+
+		h1 {
+			@media only screen and (min-width: $bp__tablet) {
+				max-width 		: 400px;
+				padding-right 	: 0.5em;
+				text-align 		: right;
+			}
+		}
+	}
+}
+
+.wide-head {
+
+	.headline {
+
+		h1 {
+			@media only screen and (min-width: $bp__tablet) {
+				max-width: 540px;
+			}
+		}
+	}
+}
+
+.content {
+	margin 		: 0 auto;
+	max-width 	: $size__max-width;
+}
+
+.headline {
+	@media only screen and (min-width: $bp__tablet) {
+		display 		: flex;
+		justify-content : flex-end;
+		padding-left 	: 50%;
+		padding-top 	: 5em;
+	}
+}
+
+.bg-img {
+	width: 100%;
+}

@@ -1,0 +1,81 @@
+/*!
+Theme Name: TCB Landing Pages
+Theme URI: http://underscores.me/
+Author: Chris Wilcoxson
+Author URI: http://dccmarketing.com/
+Description: Custom WordPress theme for TCB Landing Pages by DCC Marketing derived from _s by Automattic
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: tcb-landing
+Tags: accessibility-ready, responsive-layout, full-width-template, theme-options, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+TCB Landing Pages is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+TCB Landing Pages is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+Variables
+Mixins & Extensions
+Normalize
+Typography
+Elements
+Forms
+Navigation
+Content
+Modules
+Media
+--------------------------------------------------------------*/
+@import "sass/variables-site/*";
+@import "sass/mixins/*";
+
+/*--------------------------------------------------------------
+## Reset
+--------------------------------------------------------------*/
+@import "sass/normalize";
+
+/*--------------------------------------------------------------
+## Typography
+--------------------------------------------------------------*/
+@import "sass/typography/*";
+
+/*--------------------------------------------------------------
+## Elements
+--------------------------------------------------------------*/
+@import "sass/elements/*";
+
+/*--------------------------------------------------------------
+## Forms
+--------------------------------------------------------------*/
+@import "sass/forms/*";
+
+/*--------------------------------------------------------------
+## Navigation
+--------------------------------------------------------------*/
+@import "sass/navigation/*";
+
+/*--------------------------------------------------------------
+## Content
+--------------------------------------------------------------*/
+@import "sass/site/*";
+@import "sass/site/global/*";
+@import "sass/site/primary/*";
+@import "sass/site/secondary/*";
+
+/*--------------------------------------------------------------
+## Modules
+--------------------------------------------------------------*/
+@import "sass/modules/*";
+
+/*--------------------------------------------------------------
+## Media
+--------------------------------------------------------------*/
+@import "sass/media/*";

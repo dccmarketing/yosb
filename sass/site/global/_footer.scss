@@ -1,0 +1,30 @@
+[role="contentinfo"] {
+	background-color: $tan;
+	font-size 		: 0.85em;
+	padding 		: 1em;
+
+	@media only screen and (min-width: $bp__tablet) {
+		& > * {
+			margin-left : auto;
+			margin-right: auto;
+			max-width 	: $size__max-width;
+		}
+	}
+}
+
+.legal-links {
+	@include listreset();
+
+	a {
+		@media only screen and (max-width: $bp__tablet - 1) {
+			display: block;
+			padding: 0.5em 0;
+		}
+	}
+
+	@media only screen and (min-width: $bp__tablet) {
+		@include menuwithlines();
+		margin 		: 0 auto;
+		max-width 	: $size__max-width;
+	}
+}

@@ -1,0 +1,28 @@
+@mixin even() {
+	align-items 	: center;
+	display 		: flex;
+	justify-content : space-between;
+}
+
+@mixin maxcenter( $width ) {
+	margin 		: 0 auto;
+	max-width 	: $width;
+}
+
+@mixin menuwithlines() {
+	display 	: flex;
+	flex-wrap 	: wrap;
+
+	li {
+		line-height: 1;
+
+		&:not(:last-child) {
+			border-right: 1px solid;
+			padding-right: 0.5em;
+		}
+
+		&:not(:first-child) {
+			padding-left: 0.5em;
+		}
+	}
+}

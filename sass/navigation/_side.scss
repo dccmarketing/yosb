@@ -1,0 +1,32 @@
+.nav-side {
+
+	ul {
+		@include listreset();
+	}
+
+	a {
+		display 		: block;
+		font-size 		: 1.5em;
+		padding 		: 0.5em;
+		text-align 		: right;
+		text-decoration : none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+
+		&:after {
+			border-color 		: transparent;
+			border-left-color	: $maroon;
+			border-style 		: solid;
+			border-width 		: 0.4em;
+			content 			: "";
+			display 			: inline-block;
+			margin-left 		: 0.5em;
+
+			@media only screen and (min-width: $bp__tablet) {
+				border-left-color: $light;
+			}
+		}
+	}
+}

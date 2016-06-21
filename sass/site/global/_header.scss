@@ -1,0 +1,42 @@
+header[role="banner"]{
+	// DO NOT ADD PADDING HERE! - it screws up menus
+	@include maxcenter( $size__max-width );
+	position: relative;
+
+	@media only screen and (min-width: $bp__tablet) {
+		@include even();
+	}
+
+	a {
+		outline-color: $tan;
+	}
+}
+
+.site-branding {
+	margin		: 0 auto;
+}
+
+.site-title {
+	background-color: $maroon;
+	margin 			: 0;
+	text-align 		: center;
+
+	a {
+		color 			: $color__text-site-title;
+		text-decoration : none;
+	}
+}
+
+.site-description {
+	text-align: center;
+}
+
+.logo,
+.custom-logo {
+	max-width: inherit;
+
+	@media only screen and (max-width: $bp__tablet - 1) {
+		display		: block;
+		margin 		: 0 auto;
+	}
+}

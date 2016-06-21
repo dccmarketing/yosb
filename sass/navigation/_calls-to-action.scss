@@ -1,0 +1,37 @@
+.actions {
+	background-color: $maroon;
+
+	ul {
+		@include listreset();
+		@include maxcenter( $size__max-width );
+
+		@media only screen and (min-width: $bp__tablet) {
+			@include even();
+		}
+	}
+
+	li {
+		border-color 	: $light $light $brown;
+		border-width 	: 1px 0;
+		width 			: 100%;
+
+		@media only screen and (min-width: $bp__tablet) {
+			border-width 	: 0;
+		}
+	}
+
+	a {
+		color 			: $light;
+		display 		: block;
+		outline-color 	: $tan;
+		padding 		: 1em;
+		text-align 		: center;
+		text-transform 	: uppercase;
+
+		&:visited,
+		&:hover,
+		&:active {
+			color: $light;
+		}
+	}
+}
