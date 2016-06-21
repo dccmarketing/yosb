@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package TCB_Landing
+ * @package Year_of_Small_Business
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) { return; }

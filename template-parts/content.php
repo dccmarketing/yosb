@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package TCB_Landing
+ * @package Year_of_Small_Business
  */
 
 ?><article id="post-<?php the_ID(); ?>" <?php post_class(); ?>><?php

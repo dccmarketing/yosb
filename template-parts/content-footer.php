@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package TCB_Landing
+ * @package Year_of_Small_Business
  */
 
 ?><p><?php printf( esc_html__( 'Town and Country is committed to fair and responsible mortgage lending practices. Our entire team is licensed through the National Mortgage Licensing System. Their NMLS numbers are accessible in the %1$s.', 'yosb' ), '<a href="http://www.townandcountrybank.com/home-ownership/your-team" target="_blank">Your Team page of our website.</a>' ); ?></p>

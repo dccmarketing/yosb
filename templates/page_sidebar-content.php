@@ -4,7 +4,7 @@
  *
  * Description: Page template with sidebar on the left-side
  *
- * @package TCB_Landing
+ * @package Year_of_Small_Business
  */
 
 get_header();

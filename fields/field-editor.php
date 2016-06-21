@@ -6,7 +6,7 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    TCB_Landing
+ * @package    Year_of_Small_Business
  */
 
 // wp_editor( $content, $editor_id, $settings = array() );

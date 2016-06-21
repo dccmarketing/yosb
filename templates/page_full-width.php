@@ -4,7 +4,7 @@
  *
  * Description: A full-width template with no sidebar
  *
- * @package TCB_Landing
+ * @package Year_of_Small_Business
  */
 
 get_header();

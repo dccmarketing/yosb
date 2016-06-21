@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package  	DocBlock
+ * @package  	Year_of_Small_Business
  */
 class yosb_Automattic {
 

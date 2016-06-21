@@ -6,7 +6,7 @@
  * @link       http://slushman.com
  * @since      1.0.0
  *
- * @package    TCB_Landing
+ * @package    Year_of_Small_Business
  */
 
 wp_nonce_field( $this->theme_name, 'nonce_yosb_page' );

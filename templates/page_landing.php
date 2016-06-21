@@ -4,7 +4,7 @@
  *
  * Description: A full-width template with no sidebar
  *
- * @package TCB_Landing
+ * @package Year_of_Small_Business
  */
 
 $meta = get_post_custom( get_the_ID() );

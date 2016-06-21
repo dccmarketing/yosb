@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package TCB_Landing
+ * @package Year_of_Small_Business
  */
 
 if ( ! function_exists( 'yosb_posted_on' ) ) :

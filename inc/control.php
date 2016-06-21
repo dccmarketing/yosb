@@ -5,7 +5,7 @@
  *
  * @since 		1.0.0
  *
- * @package 	TCB_Landing
+ * @package 	Year_of_Small_Business
  */
 class yosb_Control {
 

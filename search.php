@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package TCB_Landing
+ * @package Year_of_Small_Business
  */
 
 get_header();

@@ -18,7 +18,7 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    TCB_Landing
+ * @package    Year_of_Small_Business
  */
 
 ?><fieldset role="radiogroup" class="wrap-radios"><?php

@@ -6,7 +6,7 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    TCB_Landing
+ * @package    Year_of_Small_Business
  */
 
 ?><label for="<?php echo esc_attr( $atts['id'] ); ?>">

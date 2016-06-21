@@ -7,7 +7,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package TCB_Landing
+ * @package Year_of_Small_Business
  */
 
 /*

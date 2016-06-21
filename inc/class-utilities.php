@@ -3,7 +3,7 @@
 /**
  * A class of helpful theme functions
  *
- * @package TCB_Landing
+ * @package Year_of_Small_Business
  * @author Slushman <chris@slushman.com>
  */
 class yosb_Utilities {

@@ -2,7 +2,7 @@
 /**
  * The sidebar for the Sidrbar Content page template
  *
- * @package TCB_Landing
+ * @package Year_of_Small_Business
  */
 
 if ( ! is_active_sidebar( 'sidebar-left' ) ) { return; }

@@ -4,7 +4,7 @@
  *
  * Description: Landing page with wider headline area.
  *
- * @package TCB_Landing
+ * @package Year_of_Small_Business
  */
 
 $meta = get_post_custom( get_the_ID() );
