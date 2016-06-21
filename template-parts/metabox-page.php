@@ -9,7 +9,7 @@
  * @package    TCB_Landing
  */
 
-wp_nonce_field( $this->theme_name, 'nonce_tcb_landing_page' );
+wp_nonce_field( $this->theme_name, 'nonce_yosb_page' );
 
 $atts 					= array();
 $atts['class'] 			= 'widefat';

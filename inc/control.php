@@ -7,7 +7,7 @@
  *
  * @package 	TCB_Landing
  */
-class tcb_landing_Control {
+class yosb_Control {
 
 	/**
 	 * The loader that's responsible for maintaining and registering all hooks that power
@@ -15,7 +15,7 @@ class tcb_landing_Control {
 	 *
 	 * @since    1.0.0
 	 * @access   protected
-	 * @var      tcb_landing_Loader    $loader    Maintains and registers all hooks for the theme.
+	 * @var      yosb_Loader    $loader    Maintains and registers all hooks for the theme.
 	 */
 	protected $loader;
 
@@ -66,9 +66,9 @@ class tcb_landing_Control {
 	 *
 	 * Include the following files that make up the theme:
 	 *
-	 * - tcb_landing_Loader. Orchestrates the hooks of the theme.
-	 * - tcb_landing_Admin. Defines all hooks for the admin area.
-	 * - tcb_landing_Public. Defines all hooks for the public side of the site.
+	 * - yosb_Loader. Orchestrates the hooks of the theme.
+	 * - yosb_Admin. Defines all hooks for the admin area.
+	 * - yosb_Public. Defines all hooks for the public side of the site.
 	 *
 	 * Create an instance of the loader which will be used to register the hooks
 	 * with WordPress.
@@ -119,8 +119,8 @@ class tcb_landing_Control {
 		 */
 		require_once get_template_directory() . '/inc/class-customizer.php';
 
-		$this->loader 		= new tcb_landing_Loader();
-		$this->sanitizer 	= new tcb_landing_Sanitize();
+		$this->loader 		= new yosb_Loader();
+		$this->sanitizer 	= new yosb_Sanitize();
 
 	} // load_dependencies()
 
@@ -132,7 +132,7 @@ class tcb_landing_Control {
 	 */
 	private function define_automattic_hooks() {
 
-		$theme_automattic = new tcb_landing_Automattic( $this->get_theme_name(), $this->get_version() );
+		$theme_automattic = new yosb_Automattic( $this->get_theme_name(), $this->get_version() );
 
 		$this->loader->action( 'after_setup_theme', $theme_automattic, 'jetpack_setup' );
 		$this->loader->action( 'after_setup_theme', $theme_automattic, 'wpcom_setup' );
@@ -147,7 +147,7 @@ class tcb_landing_Control {
 	 */
 	private function define_customizer_hooks() {
 
-		$theme_customizer = new tcb_landing_Customizer( $this->get_theme_name(), $this->get_version() );
+		$theme_customizer = new yosb_Customizer( $this->get_theme_name(), $this->get_version() );
 
 		$this->loader->action( 'customize_register', 					$theme_customizer, 'register_panels' );
 		$this->loader->action( 'customize_register', 					$theme_customizer, 'register_sections' );
@@ -166,7 +166,7 @@ class tcb_landing_Control {
 	 */
 	private function define_menu_hooks() {
 
-		$theme_menu = new tcb_landing_Menukit( $this->get_theme_name(), $this->get_version() );
+		$theme_menu = new yosb_Menukit( $this->get_theme_name(), $this->get_version() );
 
 		//$this->loader->filter( 'walker_nav_menu_start_el', 		$theme_menu, 'dashicon_before_menu_item', 10, 4 );
 		//$this->loader->filter( 'walker_nav_menu_start_el', 		$theme_menu, 'dashicon_after_menu_item', 10, 4 );
@@ -191,7 +191,7 @@ class tcb_landing_Control {
 	 */
 	private function define_metabox_hooks() {
 
-		$theme_metaboxes = new tcb_landing_Admin_Metaboxes( $this->get_theme_name(), $this->get_version() );
+		$theme_metaboxes = new yosb_Admin_Metaboxes( $this->get_theme_name(), $this->get_version() );
 
 		$this->loader->action( 'add_meta_boxes', 				$theme_metaboxes, 'add_metaboxes' );
 		$this->loader->action( 'save_post', 					$theme_metaboxes, 'validate_meta', 10, 2 );
@@ -211,9 +211,9 @@ class tcb_landing_Control {
 	 */
 	private function define_theme_hooks() {
 
-		$theme_hooks = new tcb_landing_Themehooks( $this->get_theme_name(), $this->get_version() );
+		$theme_hooks = new yosb_Themehooks( $this->get_theme_name(), $this->get_version() );
 
-		$this->loader->action( 'tcb_landing_header_content', 	$theme_hooks, 'title_site', 10 );
+		$this->loader->action( 'yosb_header_content', 	$theme_hooks, 'title_site', 10 );
 		$this->loader->action( 'tha_header_bottom', 			$theme_hooks, 'get_menu_primary', 95 );
 		$this->loader->action( 'tha_body_top', 					$theme_hooks, 'analytics_code', 10 );
 		$this->loader->action( 'tha_body_top', 					$theme_hooks, 'skip_link', 20 );
@@ -222,23 +222,23 @@ class tcb_landing_Control {
 		$this->loader->action( 'tha_content_while_after', 		$theme_hooks, 'posts_nav' );
 		$this->loader->action( 'tha_content_after', 			$theme_hooks, 'menu_calls_to_action' );
 		$this->loader->action( 'tha_entry_after', 				$theme_hooks, 'comments', 10 );
-		$this->loader->action( 'tcb_landing_404_before', 		$theme_hooks, 'title_404', 10 );
-		$this->loader->action( 'tcb_landing_404_content', 		$theme_hooks, 'add_search', 10 );
-		$this->loader->action( 'tcb_landing_404_content', 		$theme_hooks, 'four_04_posts_widget', 15 );
-		$this->loader->action( 'tcb_landing_404_content', 		$theme_hooks, 'four_04_categories', 20 );
-		$this->loader->action( 'tcb_landing_404_content', 		$theme_hooks, 'four_04_archives', 25 );
-		$this->loader->action( 'tcb_landing_404_content', 		$theme_hooks, 'four_04_tag_cloud', 30 );
+		$this->loader->action( 'yosb_404_before', 		$theme_hooks, 'title_404', 10 );
+		$this->loader->action( 'yosb_404_content', 		$theme_hooks, 'add_search', 10 );
+		$this->loader->action( 'yosb_404_content', 		$theme_hooks, 'four_04_posts_widget', 15 );
+		$this->loader->action( 'yosb_404_content', 		$theme_hooks, 'four_04_categories', 20 );
+		$this->loader->action( 'yosb_404_content', 		$theme_hooks, 'four_04_archives', 25 );
+		$this->loader->action( 'yosb_404_content', 		$theme_hooks, 'four_04_tag_cloud', 30 );
 		$this->loader->action( 'entry_header_content', 			$theme_hooks, 'title_entry', 10 );
 		$this->loader->action( 'entry_header_content', 			$theme_hooks, 'title_none', 10 );
 		$this->loader->action( 'entry_header_content', 			$theme_hooks, 'title_search', 10 );
 		$this->loader->action( 'entry_header_content', 			$theme_hooks, 'posted_on', 20 );
 		$this->loader->action( 'tha_footer_top', 				$theme_hooks, 'footer_wrap_begin' );
-		$this->loader->action( 'tcb_landing_footer_content', 	$theme_hooks, 'footer_legal_links', 10 );
-		$this->loader->action( 'tcb_landing_footer_content', 	$theme_hooks, 'footer_content', 20 );
+		$this->loader->action( 'yosb_footer_content', 	$theme_hooks, 'footer_legal_links', 10 );
+		$this->loader->action( 'yosb_footer_content', 	$theme_hooks, 'footer_content', 20 );
 		$this->loader->action( 'tha_footer_bottom', 			$theme_hooks, 'footer_wrap_end' );
 
-		$this->loader->action( 'tcb_landing_page_content', 		$theme_hooks, 'headline', 15, 2 );
-		$this->loader->action( 'tcb_landing_page_content', 		$theme_hooks, 'get_menu_side', 20, 2 );
+		$this->loader->action( 'yosb_page_content', 		$theme_hooks, 'headline', 15, 2 );
+		$this->loader->action( 'yosb_page_content', 		$theme_hooks, 'get_menu_side', 20, 2 );
 
 	} // define_theme_hooks()
 
@@ -250,7 +250,7 @@ class tcb_landing_Control {
 	 */
 	private function define_utility_hooks() {
 
-		$theme_utils = new tcb_landing_Utilities( $this->get_theme_name(), $this->get_version() );
+		$theme_utils = new yosb_Utilities( $this->get_theme_name(), $this->get_version() );
 
 		$this->loader->action( 'after_setup_theme', 				$theme_utils, 'setup' );
 		$this->loader->action( 'after_setup_theme', 				$theme_utils, 'content_width', 0 );
@@ -298,7 +298,7 @@ class tcb_landing_Control {
 	 *
 	 * @since     1.0.0
 	 *
-	 * @return    tcb_landing_Loader    Orchestrates the hooks of the theme.
+	 * @return    yosb_Loader    Orchestrates the hooks of the theme.
 	 */
 	public function get_loader() {
 

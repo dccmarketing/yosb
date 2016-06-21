@@ -36,11 +36,11 @@
 			do_action( 'tha_footer_top' );
 
 			/**
-			 * The tcb_landing_footer_content action hook
+			 * The yosb_footer_content action hook
 			 *
 			 * @hooked 		footer_content
 			 */
-			do_action( 'tcb_landing_footer_content' );
+			do_action( 'yosb_footer_content' );
 
 			/**
 			 * The tha_footer_bottom action hook

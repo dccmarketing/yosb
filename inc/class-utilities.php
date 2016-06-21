@@ -6,7 +6,7 @@
  * @package TCB_Landing
  * @author Slushman <chris@slushman.com>
  */
-class tcb_landing_Utilities {
+class yosb_Utilities {
 
 	/**
 	 * Constructor
@@ -61,7 +61,7 @@ class tcb_landing_Utilities {
 		) );*/
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'tcb_landing_custom_background_args', array(
+		add_theme_support( 'custom-background', apply_filters( 'yosb_custom_background_args', array(
 			'default-color' => 'ffffff',
 			'default-image' => '',
 		) ) );
@@ -142,10 +142,10 @@ class tcb_landing_Utilities {
 	 */
 	public function background_images() {
 
-		global $tcb_landing_themekit;
+		global $yosb_themekit;
 
 		$output = '';
-		$image 	= $tcb_landing_themekit->get_thumbnail_url( get_the_ID(), 'full' );
+		$image 	= $yosb_themekit->get_thumbnail_url( get_the_ID(), 'full' );
 
 		if ( ! $image ) {
 
@@ -168,14 +168,14 @@ class tcb_landing_Utilities {
 	} // background_images()
 
 	/**
-	 * Flush out the transients used in tcb_landing_categorized_blog.
+	 * Flush out the transients used in yosb_categorized_blog.
 	 */
 	public function category_transient_flusher() {
 
 		if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) { return; }
 
 		// Like, beat it. Dig?
-		delete_transient( 'tcb_landing_categories' );
+		delete_transient( 'yosb_categories' );
 
 	} // category_transient_flusher()
 
@@ -188,7 +188,7 @@ class tcb_landing_Utilities {
 	 */
 	public function content_width() {
 
-		$GLOBALS['content_width'] = apply_filters( 'tcb_landing_content_width', 640 );
+		$GLOBALS['content_width'] = apply_filters( 'yosb_content_width', 640 );
 
 	} // content_width()
 

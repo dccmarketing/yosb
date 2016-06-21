@@ -8,7 +8,7 @@
  * @since 		1.0.0
  * @package  	DocBlock
  */
-class tcb_landing_Customizer {
+class yosb_Customizer {
 
 	/**
 	 * Registers custom panels for the Customizer
@@ -548,7 +548,7 @@ class tcb_landing_Customizer {
 		$wp_customize->add_control(
 			'country',
 			array(
-				'choices' 			=> tcb_landing_country_list(),
+				'choices' 			=> yosb_country_list(),
 				'description' 		=> esc_html__( '', 'tcb-landing' ),
 				'label' 			=> esc_html__( 'Country', 'tcb-landing' ),
 				'priority' 			=> 250,
@@ -775,10 +775,10 @@ class tcb_landing_Customizer {
 		<style type="text/css"><?php
 
 			// pattern:
-			// tcb_landing_generate_css( 'selector', 'style', 'mod_name', 'prefix', 'postfix', true );
+			// yosb_generate_css( 'selector', 'style', 'mod_name', 'prefix', 'postfix', true );
 			//
 			// background-image example:
-			// tcb_landing_generate_css( '.class', 'background-image', 'background_image_example', 'url(', ')' );
+			// yosb_generate_css( '.class', 'background-image', 'background_image_example', 'url(', ')' );
 
 
 		?></style><!-- Customizer CSS --><?php
@@ -811,7 +811,7 @@ class tcb_landing_Customizer {
 	 */
 	public function live_preview() {
 
-		wp_enqueue_script( 'tcb_landing_customizer', get_template_directory_uri() . '/js/customizer.min.js', array( 'jquery', 'customize-preview' ), '', true );
+		wp_enqueue_script( 'yosb_customizer', get_template_directory_uri() . '/js/customizer.min.js', array( 'jquery', 'customize-preview' ), '', true );
 
 	} // live_preview()
 
@@ -826,7 +826,7 @@ class tcb_landing_Customizer {
 	 */
 	public function control_scripts() {
 
-		wp_enqueue_script( 'tcb_landing_customizer_controls', get_template_directory_uri() . '/js/customizer-controls.min.js', array( 'jquery', 'customize-controls' ), false, true );
+		wp_enqueue_script( 'yosb_customizer_controls', get_template_directory_uri() . '/js/customizer-controls.min.js', array( 'jquery', 'customize-controls' ), false, true );
 
 	} // control_scripts()
 
@@ -846,7 +846,7 @@ class tcb_landing_Customizer {
 		if ( 'us_state' === $control->id && 'US' === $country_setting ) { return true; }
 		if ( 'canada_state' === $control->id && 'CA' === $country_setting ) { return true; }
 		if ( 'australia_state' === $control->id && 'AU' === $country_setting ) { return true; }
-		if ( 'default_state' === $control->id && ! tcb_landing_custom_countries( $country_setting ) ) { return true; }
+		if ( 'default_state' === $control->id && ! yosb_custom_countries( $country_setting ) ) { return true; }
 
 		return false;
 

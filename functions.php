@@ -36,4 +36,4 @@ require get_template_directory() . '/inc/control.php';
  *
  * @since    1.0.0
  */
-call_user_func( array( new tcb_landing_Control(), 'run' ) );
+call_user_func( array( new yosb_Control(), 'run' ) );

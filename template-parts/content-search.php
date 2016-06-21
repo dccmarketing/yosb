@@ -33,7 +33,7 @@
 
 	?><footer class="entry-footer"><?php
 
-		tcb_landing_entry_footer();
+		yosb_entry_footer();
 
 	?></footer><!-- .entry-footer --><?php
 

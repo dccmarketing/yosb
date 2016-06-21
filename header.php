@@ -68,7 +68,7 @@ do_action( 'tha_html_before' );
 			 * @hooked 		site_title 			10
 			 * @hooked 		site_description 	15
 			 */
-			do_action( 'tcb_landing_header_content' );
+			do_action( 'yosb_header_content' );
 
 			/**
 			 * The tha_header_bottom action hook

@@ -6,7 +6,7 @@
  * @package TCB_Landing
  * @author Slushman <chris@slushman.com>
  */
-class tcb_landing_Menukit {
+class yosb_Menukit {
 
 	/**
 	 * Constructor
@@ -150,7 +150,7 @@ class tcb_landing_Menukit {
 	/**
 	 * Add Down Caret to Menus with Children
 	 *
-	 * @global 		 			$tcb_landing_themekit 			Themekit class
+	 * @global 		 			$yosb_themekit 			Themekit class
 	 *
 	 * @param 		string 		$item_output		//
 	 * @param 		object 		$item				//
@@ -163,14 +163,14 @@ class tcb_landing_Menukit {
 
 		if ( ! in_array( 'menu-item-has-children', $item->classes ) ) { return $item_output; }
 
-		global $tcb_landing_themekit;
+		global $yosb_themekit;
 
 		$atts 	= $this->get_attributes( $item );
 		$output = '';
 
 		$output .= '<a href="' . $item->url . '">';
 		$output .= $item->title;
-		$output .= '<span class="children">' . $tcb_landing_themekit->get_svg( 'caret-down' ) . '</span>';
+		$output .= '<span class="children">' . $yosb_themekit->get_svg( 'caret-down' ) . '</span>';
 		$output .= '</a>';
 
 		return $output;
@@ -341,20 +341,20 @@ class tcb_landing_Menukit {
 	/**
 	 * Gets the appropriate SVG based on a menu item class
 	 *
-	 * @global 		 			$tcb_landing_themekit 			Themekit class
+	 * @global 		 			$yosb_themekit 			Themekit class
 	 * @param 		array 		$classes 					Array of classes to check
 	 * @param 		string 		$link 						Optional to add to the SVG
 	 * @return 		mixed 									SVG icon
 	 */
 	public function get_svg_by_class( $classes ) {
 
-		global $tcb_landing_themekit;
+		global $yosb_themekit;
 
 		$output = '';
 
 		foreach ( $classes as $class ) {
 
-			$check = $tcb_landing_themekit->get_svg( $class );
+			$check = $yosb_themekit->get_svg( $class );
 
 			if ( ! is_null( $check ) ) { $output .= $check; break; }
 

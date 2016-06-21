@@ -6,7 +6,7 @@
  *
  * @package  	DocBlock
  */
-class tcb_landing_Automattic {
+class yosb_Automattic {
 
 	/**
 	 * Constructor
@@ -57,7 +57,7 @@ class tcb_landing_Automattic {
 /**
  * Custom render function for Infinite Scroll.
  */
-function tcb_landing_infinite_scroll_render() {
+function yosb_infinite_scroll_render() {
 
 	while ( have_posts() ) {
 
@@ -75,4 +75,4 @@ function tcb_landing_infinite_scroll_render() {
 
 	}
 
-} // tcb_landing_infinite_scroll_render()
+} // yosb_infinite_scroll_render()

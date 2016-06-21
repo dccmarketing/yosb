@@ -7,7 +7,7 @@
  *
  * @package 	TCB_Landing
  */
-class tcb_landing_Admin_Metaboxes {
+class yosb_Admin_Metaboxes {
 
 	/**
 	 * The post meta data
@@ -63,7 +63,7 @@ class tcb_landing_Admin_Metaboxes {
 		// add_meta_box( $id, $title, $callback, $screen, $context, $priority, $callback_args );
 
 		add_meta_box(
-			'tcb_landing_page',
+			'yosb_page',
 			apply_filters( $this->theme_name . '-metabox-name-title', esc_html__( 'Landing Page', 'tcb-landing' ) ),
 			array( $this, 'metabox' ),
 			'page',
@@ -108,7 +108,7 @@ class tcb_landing_Admin_Metaboxes {
 		$nonces 		= array();
 		$nonce_check 	= 0;
 
-		$nonces[] 	= 'nonce_tcb_landing_page';
+		$nonces[] 	= 'nonce_yosb_page';
 
 		foreach ( $nonces as $nonce ) {
 
@@ -211,7 +211,7 @@ class tcb_landing_Admin_Metaboxes {
 		foreach ( $metas as $meta ) {
 
 			$value 		= ( empty( $this->meta[$meta[0]][0] ) ? '' : $this->meta[$meta[0]][0] );
-			$sanitizer 	= new tcb_landing_Sanitize();
+			$sanitizer 	= new yosb_Sanitize();
 			$new_value 	= $sanitizer->clean( $_POST[$meta[0]], $meta[1] );
 
 			update_post_meta( $post_id, $meta[0], $new_value );

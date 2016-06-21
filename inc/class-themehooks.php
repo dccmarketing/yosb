@@ -6,7 +6,7 @@
  * @package TCB_Landing
  * @author Slushman <chris@slushman.com>
  */
-class tcb_landing_Themehooks {
+class yosb_Themehooks {
 
 	/**
 	 * Constructor
@@ -35,7 +35,7 @@ class tcb_landing_Themehooks {
 	/**
 	 * Adds a search form
 	 *
-	 * @hooked 		tcb_landing_404_content 		15
+	 * @hooked 		yosb_404_content 		15
 	 *
 	 * @return 		mixed 		Search form markup
 	 */
@@ -69,7 +69,7 @@ class tcb_landing_Themehooks {
 	/**
 	 * Returns the appropriate breadcrumbs.
 	 *
-	 * @hooked		tcb_landing_wrap_content
+	 * @hooked		yosb_wrap_content
 	 *
 	 * @return 		mixed 				WooCommerce breadcrumbs, then Yoast breadcrumbs
 	 */
@@ -143,7 +143,7 @@ class tcb_landing_Themehooks {
 	/**
 	 * Adds the copyright and credits to the footer content.
 	 *
-	 * @hooked 		tcb_landing_footer_content
+	 * @hooked 		yosb_footer_content
 	 *
 	 * @return 		mixed 									The footer markup
 	 */
@@ -190,7 +190,7 @@ class tcb_landing_Themehooks {
 	/**
 	 * Adds the  to the 404 page content.
 	 *
-	 * @hooked 		tcb_landing_404_content		25
+	 * @hooked 		yosb_404_content		25
 	 *
 	 * @return 		mixed 							Markup for the archives
 	 */
@@ -208,14 +208,14 @@ class tcb_landing_Themehooks {
 	/**
 	 * Adds the  to the 404 page content.
 	 *
-	 * @hooked 		tcb_landing_404_content		20
+	 * @hooked 		yosb_404_content		20
 	 *
 	 * @return 		mixed 							The categories widget
 	 */
 	public function four_04_categories() {
 
 		if ( ! is_404() ) { return; }
-		if ( ! tcb_landing_categorized_blog() ) { return; }
+		if ( ! yosb_categorized_blog() ) { return; }
 
 		?><div class="widget widget_categories">
 			<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'tcb-landing' ); ?></h2>
@@ -237,7 +237,7 @@ class tcb_landing_Themehooks {
 	/**
 	 * Adds the Recent Posts widget to the 404 page.
 	 *
-	 * @hooked 		tcb_landing_404_content 		15
+	 * @hooked 		yosb_404_content 		15
 	 *
 	 * @return 		mixed 							The Recent Posts widget
 	 */
@@ -252,7 +252,7 @@ class tcb_landing_Themehooks {
 	/**
 	 * Adds the  to the 404 page content.
 	 *
-	 * @hooked 		tcb_landing_404_content		30
+	 * @hooked 		yosb_404_content		30
 	 *
 	 * @return 		mixed 							The tag cloud widget
 	 */
@@ -267,7 +267,7 @@ class tcb_landing_Themehooks {
 	/**
 	 * Returns the side menu selected on the page.
 	 *
-	 * @hooked 		tcb_landing_page_content 			20
+	 * @hooked 		yosb_page_content 			20
 	 *
 	 * @param 		int 			$postID 			The post ID
 	 * @param 		array 			$meta 				The post metadata
@@ -352,7 +352,7 @@ class tcb_landing_Themehooks {
 	/**
 	 * The headline markup
 	 *
-	 * @hooked 		tcb_landing_page_content 			10
+	 * @hooked 		yosb_page_content 			10
 	 *
 	 * @param 		int 			$postID 			The post ID
 	 * @param 		array 			$meta 				The post metadata
@@ -406,7 +406,7 @@ class tcb_landing_Themehooks {
 
 		?><div class="entry-meta"><?php
 
-			tcb_landing_posted_on();
+			yosb_posted_on();
 
 		?></div><!-- .entry-meta --><?php
 
@@ -459,7 +459,7 @@ class tcb_landing_Themehooks {
 	/**
 	 * Adds the site description markup
 	 *
-	 * @hooked 		tcb_landing_header_content 		15
+	 * @hooked 		yosb_header_content 		15
 	 *
 	 * @return 		mixed 								The site description markup
 	 */
@@ -491,7 +491,7 @@ class tcb_landing_Themehooks {
 	/**
 	 * The subheading markup
 	 *
-	 * @hooked 		tcb_landing_page_content 			10
+	 * @hooked 		yosb_page_content 			10
 	 *
 	 * @param 		int 			$postID 			The post ID
 	 * @param 		array 			$meta 				The post metadata
@@ -512,7 +512,7 @@ class tcb_landing_Themehooks {
 	/**
 	 * The 404 page title markup
 	 *
-	 * @hooked 		tcb_landing_404_content 		10
+	 * @hooked 		yosb_404_content 		10
 	 *
 	 * @return 		mixed 							The 440 page title
 	 */
@@ -643,7 +643,7 @@ class tcb_landing_Themehooks {
 	/**
 	 * Adds the site title markup
 	 *
-	 * @hooked 		tcb_landing_header_content 		10
+	 * @hooked 		yosb_header_content 		10
 	 *
 	 * @return 		mixed 								The site title markup
 	 */

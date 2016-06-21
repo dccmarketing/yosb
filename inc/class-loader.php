@@ -7,7 +7,7 @@
  *
  * @package 	TCB_Landing
  */
-class tcb_landing_Loader {
+class yosb_Loader {
 
 	/**
 	 * The array of actions registered with WordPress.

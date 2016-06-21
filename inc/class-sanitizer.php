@@ -8,7 +8,7 @@
  * @package 	TCB_Landing
  */
 
-class tcb_landing_Sanitize {
+class yosb_Sanitize {
 
 	/**
 	 * Constructor
@@ -54,7 +54,7 @@ class tcb_landing_Sanitize {
 		/**
 		 * Add additional santization before the default sanitization
 		 */
-		do_action( 'tcb_landing_pre_sanitize', $sanitized );
+		do_action( 'yosb_pre_sanitize', $sanitized );
 
 		switch ( $type ) {
 
@@ -87,7 +87,7 @@ class tcb_landing_Sanitize {
 		/**
 		 * Add additional santization after the default .
 		 */
-		do_action( 'tcb_landing_post_sanitize', $sanitized );
+		do_action( 'yosb_post_sanitize', $sanitized );
 
 		return $sanitized;
 
