@@ -129,7 +129,7 @@ class yosb_Utilities {
 	 */
 	public function admin_scripts_and_styles( $hook ) {
 
-		wp_enqueue_style( 'tcb-landing-admin', get_stylesheet_directory_uri() . '/admin.css' );
+		wp_enqueue_style( 'yosb-admin', get_stylesheet_directory_uri() . '/admin.css' );
 
 		// if ( 'nav-menus.php' != $hook ) { return; } // Page-specific scripts & styles after this
 
@@ -302,7 +302,7 @@ class yosb_Utilities {
 	 */
 	public function login_scripts() {
 
-		wp_enqueue_style( 'tcb-landing-login', get_stylesheet_directory_uri() . '/login.css', 10, 2 );
+		wp_enqueue_style( 'yosb-login', get_stylesheet_directory_uri() . '/login.css', 10, 2 );
 
 	} // login_scripts()
 
@@ -419,19 +419,19 @@ class yosb_Utilities {
 	 */
 	public function public_scripts_and_styles() {
 
-		wp_enqueue_style( 'tcb-landing-style', get_stylesheet_uri() );
+		wp_enqueue_style( 'yosb-style', get_stylesheet_uri() );
 
-		wp_enqueue_script( 'tcb-landing-navigation', get_template_directory_uri() . '/js/navigation.min.js', array(), '20120206', true );
+		wp_enqueue_script( 'yosb-navigation', get_template_directory_uri() . '/js/navigation.min.js', array(), '20120206', true );
 
-		wp_enqueue_script( 'tcb-landing-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.min.js', array(), '20130115', true );
+		wp_enqueue_script( 'yosb-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
 		wp_enqueue_style( 'dashicons' );
 
-		//wp_enqueue_script( 'tcb-landing-search', get_template_directory_uri() . '/js/hidden-search.min.js', array(), '20150807', true );
+		//wp_enqueue_script( 'yosb-search', get_template_directory_uri() . '/js/hidden-search.min.js', array(), '20150807', true );
 
 		wp_enqueue_script( 'enquire', '//cdnjs.cloudflare.com/ajax/libs/enquire.js/2.1.2/enquire.min.js', array(), '20150804', true );
 
-		wp_enqueue_style( 'tcb-landing-fonts', $this->fonts_url(), array(), null );
+		wp_enqueue_style( 'yosb-fonts', $this->fonts_url(), array(), null );
 
 	} // public_scripts_and_styles()
 
